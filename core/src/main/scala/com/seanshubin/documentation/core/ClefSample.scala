@@ -17,7 +17,7 @@ object ClefSample extends App {
   def formatLine(caption: String, bytes: Array[Byte]): String = {
     val bytesString = bytes.map(hexByte).mkString(" ")
     val size = bytes.size
-    s"$caption ($size) $bytesString"
+    s"$caption ($size bytes) $bytesString"
   }
 
   def bytes(x: Int): Array[Byte] = ByteBuffer.allocate(4).putInt(x).array()
@@ -25,6 +25,6 @@ object ClefSample extends App {
   def bytes(x: Char): Array[Byte] = ByteBuffer.allocate(2).putChar(x).array()
 
   def hexByte(byte: Byte): String = {
-    f"$byte%x"
+    f"$byte%02x"
   }
 }
