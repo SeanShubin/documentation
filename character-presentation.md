@@ -59,7 +59,7 @@ No serif's
 [g clef](http://www.fileformat.info/info/unicode/char/1d11e/index.htm)
 
 ### Sample application
-[source](core/src/main/scala/com/seanshubin/documentation/core)
+[source](core/src/main/scala/com/seanshubin/documentation/core/ClefSample.scala)
 
 ```text
 unicode code point (4 bytes) 00 01 d1 1e
