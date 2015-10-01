@@ -40,6 +40,12 @@ Designed to be compatible with ASCII.
 ### UTF-16
 Originally intended to be a fixed length mapping, now a variable length mapping between 16-bit code units and unicode code points.
 
+### Byte Order Mark
+A zero width character placed at the beginning of a file or character stream used to designate byte order.
+In utf-16, it is FEFF.
+If a reader sees it as FEFF, the stream is big endian.
+If the stream is little endian, it will be read as FFFE.
+
 ### ASCII
 American Standard Code for Information Interchange.  Includes the characters we are most familiar with.
 
