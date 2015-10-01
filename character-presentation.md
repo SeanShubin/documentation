@@ -100,3 +100,20 @@ object ClefSample extends App {
   }
 }
 ```
+
+### Interpreting the utf-8 bytes
+| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5 | Byte 6 | Significant Bits |
+|--------|--------|--------|--------|--------|--------|------------------|
+|0xxxxxxx|        |        |        |        |        | 7                |
+|110xxxxx|10xxxxxx|        |        |        |        | 11               |
+|1110xxxx|10xxxxxx|10xxxxxx|        |        |        | 16               |
+|11110xxx|10xxxxxx|10xxxxxx|10xxxxxx|        |        | 21               |
+|111110xx|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx|        | 26               |
+|1111110x|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx| 31               |
+
+| hex | binary   |
+|-----|----------|
+| f0  | 11110000 |
+| 9d  | 10011101 |
+| 84  | 10000100 |
+| 9e  | 11110000 |

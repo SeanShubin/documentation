@@ -13,7 +13,6 @@ object ClefSample extends App {
   println(formatLine("low surrogate     ", bytes(lowSurrogate)))
   println(formatLine("utf 8 bytes       ", gClef.getBytes(StandardCharsets.UTF_8)))
   println(formatLine("utf 16 bytes      ", gClef.getBytes(StandardCharsets.UTF_16)))
-  println(formatLine("hello             ", "hello".getBytes(StandardCharsets.UTF_16)))
 
   def formatLine(caption: String, bytes: Array[Byte]): String = {
     val bytesString = bytes.map(hexByte).mkString(" ")
