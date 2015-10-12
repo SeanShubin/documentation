@@ -6,7 +6,6 @@ Same as regular critical thinking, except replace the word "idea" with "code"
 - We deal with code that runs in an objective reality, where our opinion of how it should work is irrelevant to how it does work.
 - In order to more effectively craft code that is easy to maintain, we need to differentiate between good and bad ways of coding.  
 
-
 ## Narrowing some definitions to the relevant context
 - Claim
     - Something that can be true or false 
@@ -21,6 +20,12 @@ Same as regular critical thinking, except replace the word "idea" with "code"
     - Learned skill
     - Discipline
     - Allows us to evaluate with what confidence level we should accept or reject a claim
+
+## How we know humans are bad at critical thinking
+
+## How the world lies to us
+
+## How our brain lies to us
 
 ## When making or evaluating an argument, make sure you are clear about the argument structure
 - Conclusion: Is the central claim clearly articulated?
