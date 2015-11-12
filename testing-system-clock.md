@@ -8,5 +8,5 @@
     - As always, any time you depend on something non-deterministic, put it behind a contract
     - In the case of Java 8, there already exists a contract that will work for this purpose
         - java.time.Clock
-    - [Stopwatch](../core/src/main/java/com/seanshubin/documentation/core/Stopwatch.java)
-    - [StopwatchTest](../core/src/test/java/com/seanshubin/documentation/core/StopwatchTest.java)
+    - [Stopwatch](core/src/main/java/com/seanshubin/documentation/core/Stopwatch.java)
+    - [StopwatchTest](core/src/test/java/com/seanshubin/documentation/core/StopwatchTest.java)
