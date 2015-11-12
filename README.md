@@ -1,3 +1,4 @@
 # Sean's how-to documentation, presentations, writing, etc.
 
-- An enum pattern for Scala [DateRange](core/src/main/scala/com/seanshubin/documentation/core/DateRange.scala)
+- [Testing System Clock](testing-system-clock.md)
+- [An enum pattern for Scala](core/src/main/scala/com/seanshubin/documentation/core/DateRange.scala)
