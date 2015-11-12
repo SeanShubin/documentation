@@ -118,10 +118,11 @@
             - Do they even exist?
     - Feedback provided by external smoke test
     - Depends on everything
-    - Should only have one line, that does the following
+    - No logic
+    - Contains the minimal possible code to accomplish the following
         - Create the appropriate wiring
-        - Invoke the launcher function
-        - Inject the command line parameters to wiring or launcher function if needed
+        - Invoke the primary entry point function
+        - Inject the command-line/container-context parameters to wiring or entry point function if needed
 - Wiring
     - Chooses implementations
     - No observable state
@@ -148,7 +149,8 @@
     - No branching or chaining logic, passes straight through to api calls or services
     - Usually used by a service
     - Feedback provided by integration tests
-    - Servlets and data access objects will be here
+    - Examples of integration points are servlets and data access objects
+        - Data access objects are more like services than "object" in the object oriented sense, I did not make up the term
 - Data Transfer Object
     - Handles marshalling to and from domain objects
     - No logic other than
@@ -156,10 +158,12 @@
         - validation logic related to marshalling
     - Mutable state is sometimes ok
         - For example, if your language does not make it easy to partially copy an object, and your object is built up incrementally
+        - Just be sure you don't let two threads touch the same mutable state 
     - Feedback provided by unit tests when logic is involved
     - No dependencies on services or integration
     - Useful for preparing data for persistence, parsing http requests, and similar tasks
-    - May depend on pure function library, value objects, or domain objects
+    - May depend on pure function library, value objects, domain objects, or contracts
+        - If depending on a contract, inject through the method call rather than a field
 - Service (Application Layer)
     - Coordinates the application
     - No observable state
@@ -172,9 +176,6 @@
     - No side effecting
     - Feedback provided by unit tests
     - No dependencies outside of parameter list for each function
-    - May not depend on contracts, even in parameter list
-        - if you need this, you are coordinating
-        - move coordination parts to a service
     - Value Objects and other Pure functions are ok in parameter list
 - Domain Object / Value Object (Domain Layer)
     - Models the application
