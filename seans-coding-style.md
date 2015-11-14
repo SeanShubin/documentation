@@ -1,5 +1,20 @@
 # Sean's Coding Style
 
+The key to writing code that is easy to test and maintain, is separating deterministic from non-deterministic concerns, where deterministic refers to the code logic (if, for, a sequence of statements), and non-deterministic refers to anything not controlled by your code (integration with filesystem, clock, socket, etc.)
+
+- deterministic code
+    - if statements
+    - for loops
+    - a sequence of statements
+    - unit tests are fast and reliable
+- non-deterministic code
+    - system clock
+    - file system
+    - network
+    - not unit testable
+        - use integration tests if you need to verify the thing you don't control
+        - don't test at all if you are only forwarding to a library you don't need to verify
+
 ### High level summary
 - Compilation units should be organized in terms of responsibility
 - No more than one responsibility per compilation unit
