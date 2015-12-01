@@ -20,7 +20,7 @@
 - Supplier is responsible for ensuring postconditions before returning
 - Exception is thrown if the supplier can not fulfil its contract
     - retry
-    - organized panic, to the extent possible, undo side effects  
+    - organized panic, to the extent possible, undo side effects and rethrow  
 
 ## Java
 - In Java, use interfaces as the contract
