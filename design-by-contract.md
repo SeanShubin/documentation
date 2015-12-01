@@ -28,8 +28,12 @@
 - Don't pass nulls in an argument list, don't return nulls
     - This does not mean use options instead of nulls, architect the issue away first and only use options if you would otherwise be forced to use a null
 
-## Separate non-determinism from logic, and put it behind a contract
-- this makes code easy to unit test
+## Unit testing
+- Inject your contracts to make things easy to unit test
+    - Constructor injections
+    - Setter injection
+    - Parameter injections
+- Separate non-determinism from logic, and put it behind a contract
 - non-determinism is anything outside control of your code, such as
     - system clock
     - file system
