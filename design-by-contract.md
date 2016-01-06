@@ -30,9 +30,9 @@
 
 ## Unit testing
 - Inject your contracts to make things easy to unit test
-    - Constructor injections
+    - Constructor injection
     - Setter injection
-    - Parameter injections
+    - Parameter injection
 - Separate non-determinism from logic, and put it behind a contract
 - non-determinism is anything outside control of your code, such as
     - system clock
