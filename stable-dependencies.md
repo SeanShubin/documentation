@@ -10,7 +10,7 @@ Things that make a module more stable
 - How many people have used it
 - How long it has been in use
 - How often it is used
-- Having a bounded scope, and being complete within the scope
+- Having a bounded scope, and being complete within that scope
 - Lack of superior alternatives, in spite of sufficient exploration
 
 ## Continuous Integration
