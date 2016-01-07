@@ -21,4 +21,4 @@ continuous
 
 integration
 
-- used by and tested with our "main" code base, as reported by wipeout
+- merged into our "main" code base in a manner such that failures would be detected by wipeout
