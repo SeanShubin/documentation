@@ -22,3 +22,7 @@ continuous
 integration
 
 - merged into our "main" code base in a manner such that failures would be detected by wipeout
+
+continuous integration
+
+- upon pushing the change, it is automatically merged into our "main" code base in a manner such that failures would be detected by wipeout
