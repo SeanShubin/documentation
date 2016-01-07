@@ -61,6 +61,12 @@
 - postcondition: An assertion attached to a routine, which must be guaranteed by the routine's body on return from any call to the routine if the precondition was satisfied on entry.  Part of the contract governing the routine.
 - precondition: An assertion attached to a routine, which must be guaranteed by every client prior to any call to the routine.  Part of the contract governing the routine.
 
+## Quotes
+- Structured Design, page 71
+    - the limiting case of a system developed as a very large number of separate and increasingly interdependent pieces is that it behaves precisely like the same system developed as a single piece.
+- structure design, page 81
+    - The human limits in processing nested information are even sharper than in dealing with linear, sequential information. Whereas one can readily deal with about 7+-2 distinct entities presented in a linear or parallel fashion, the human "push-down stack" can get overloaded at only two or three levels of nesting.
+
 ## How to determine what is true
 - Lets say you have two opinions, one that 2+2=4, and another that 2+2=6, here are some sample ways to determine the fact of the matter:
 - Epistemological Relativism - There is no way to know what "+" and whole numbers are without appealing to authority, so both opinions must be equally right.
