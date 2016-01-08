@@ -66,6 +66,9 @@
     - The limiting case of a system developed as a very large number of separate and increasingly interdependent pieces is that it behaves precisely like the same system developed as a single piece.
 - Structured Design, page 81
     - The human limits in processing nested information are even sharper than in dealing with linear, sequential information. Whereas one can readily deal with about 7+-2 distinct entities presented in a linear or parallel fashion, the human "push-down stack" can get overloaded at only two or three levels of nesting.
+    - the girl the boy the dog bit hit cried
+    - the girl ( the boy ( the dog bit ) hit ) cried
+    - The dog bit boy A.  Boy A hit girl B.  Girl B cried.
 
 ## How to determine what is true
 - Lets say you have two opinions, one that 2+2=4, and another that 2+2=6, here are some sample ways to determine the fact of the matter:
