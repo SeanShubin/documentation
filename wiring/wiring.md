@@ -2,5 +2,5 @@
 
 - [unarchitected](unarchitected.svg)
 - [cohesive](cohesive.svg)
-- [decoupled](decouple.svg)
+- [decoupled](decoupled.svg)
 - [wired](wired.svg)
