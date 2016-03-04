@@ -1,0 +1,7 @@
+digraph detangled {
+  "Contract";
+  "User Interface";
+  "Database";
+  "User Interface" -> "Contract";
+  "Database" -> "Contract";
+}
