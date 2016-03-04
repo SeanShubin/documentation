@@ -1,11 +1,5 @@
-### No Architecture
+### Understanding coupling and cohesion
 
-<a href="no-architecture.svg">no architecture</a>
-
-### Make Cohesive
-
-<a href="make-cohesive.svg">make cohesive</a>
-
-### Decouple
-
-<a href="decouple.svg">decouple</a>
+- [no architecture](no-architecture.svg)
+- [make cohesive](make-cohesive.svg)
+- [decouple](decouple.svg)
