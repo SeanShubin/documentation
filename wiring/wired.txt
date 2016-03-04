@@ -1,7 +1,12 @@
 digraph detangled {
+  "Application";
+  "Wiring";
   "Contract";
   "User Interface";
   "Database";
+  "Application" -> "Wiring";
+  "Wiring" -> "User Interface";
+  "Wiring" -> "Database";
   "User Interface" -> "Contract";
   "Database" -> "Contract";
 }

@@ -1,5 +1,6 @@
 ### Understanding coupling and cohesion
 
-- [no architecture](no-architecture.svg)
-- [make cohesive](make-cohesive.svg)
-- [decouple](decouple.svg)
+- [unarchitected](unarchitected.svg)
+- [cohesive](cohesive.svg)
+- [decoupled](decouple.svg)
+- [wired](wired.svg)

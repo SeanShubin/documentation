@@ -1,5 +1,7 @@
 digraph detangled {
+  "Application";
   "User Interface";
   "Database";
+  "Application" -> "User Interface";
   "User Interface" -> "Database";
 }

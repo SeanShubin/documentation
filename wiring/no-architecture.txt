@@ -1,3 +1,0 @@
-digraph detangled {
-  "User Interface and Database";
-}

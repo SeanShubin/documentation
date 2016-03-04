@@ -1,0 +1,10 @@
+digraph detangled {
+  "Application";
+  "Contract";
+  "User Interface";
+  "Database";
+  "Application" -> "User Interface";
+  "Application" -> "Database";
+  "User Interface" -> "Contract";
+  "Database" -> "Contract";
+}
