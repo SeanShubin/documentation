@@ -1,3 +1,6 @@
 digraph detangled {
+  graph [fontname = "Arial, Helvetica, sans-serif"];
+  node [fontname = "Arial, Helvetica, sans-serif"];
+  edge [fontname = "Arial, Helvetica, sans-serif"];
   "Application, User Interface, and Database";
 }
