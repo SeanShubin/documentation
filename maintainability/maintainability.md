@@ -1,5 +1,5 @@
-### solutions
-- measure negative consequences
+### type of problem
+- measurable negative consequences
 - detectable via tooling
 - easy to fix if detected right away
 - harder to fix the longer it goes undetected
