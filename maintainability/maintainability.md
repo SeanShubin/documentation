@@ -10,7 +10,7 @@
 - fix single instance of a problem
 - lower quantity threshold
 
-### plans
+### so far
 - nondeterministic class loading
 - detangler
     - designed to keep the architecture from continually becoming harder to maintain
@@ -19,6 +19,8 @@
     - concerned with the final binaries
     - stable dependencies principle
     - dependency cycles
+
+### upcomming
 - large files in version control
 - too many third party dependencies
     - unstable apis
