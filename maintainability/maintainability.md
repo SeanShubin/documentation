@@ -1,5 +1,8 @@
+## Goal
+- make incremental progress on solving certain types of problems
+
 ### type of problem
-- measurable negative consequences
+- makes code harder to maintain
 - detectable via tooling
 - easy to fix if detected right away
 - harder to fix the longer it goes undetected
@@ -12,6 +15,7 @@
 
 ### so far
 - nondeterministic class loading
+    - class conflict detector   
 - detangler
     - designed to keep the architecture from continually becoming harder to maintain
     - reads directly out of class files
