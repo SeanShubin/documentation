@@ -1,5 +1,8 @@
 ## Goal
-- make incremental progress on solving certain types of problems
+- code should not continually become harder to maintain
+
+## Tactic
+- make incremental progress on maintainability related problems
 
 ### type of problem
 - makes code harder to maintain
