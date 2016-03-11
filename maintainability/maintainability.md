@@ -33,7 +33,7 @@
     - stable dependencies principle
     - dependency cycles
 
-### upcomming
+### upcoming
 - large files in version control
 - too many third party dependencies
     - unstable apis
