@@ -14,6 +14,12 @@
 - nondeterministic class loading
 - detangler
     - designed to keep the architecture from continually becoming harder to maintain
+        - Cohesion
+        - Coupling
+        - Design by Contract
+        - Dependency Inversion Principle
+        - Stable Dependencies Principle
+        - Acyclic Dependencies Principle
     - reads directly out of class files
     - constant values are [inlined](https://docs.oracle.com/javase/specs/jls/se8/html/jls-13.html#jls-13.1)
     - concerned with the final binaries
