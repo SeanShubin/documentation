@@ -22,6 +22,7 @@
 - entry point?
 - legacy code?
 - feeling productive?
+- other reasons?  Let me know.
 
 ## What we are doing
 
@@ -30,10 +31,11 @@
     - always allow
     - only allow for certain reasons
     - never allow
+    - actively remove
 - enumerate what we consider good reasons
 
 ## Notes
-we are continually adding more e2e test
+we are continually adding more e2e test, not removing them
 
 what is the tradeoff if we shut them all off
 
@@ -42,3 +44,5 @@ balance freedom of implementation choice against responsibility not to make code
 hello sample
 
 e2e tests make you feel productive in the same sense that not testing at all makes you feel productive
+
+story about early adopter of unit testing
