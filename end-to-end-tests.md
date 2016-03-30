@@ -1,5 +1,9 @@
 # End to End Tests
 
+## Early adopter of unit testing
+- conventional wisdom was that you would get fired for writing tests instead of working on features
+- turns out that the cost of unit tests was an illusion, as they give you the confidence you need to change code faster 
+
 ## Consensus
 - most of us think we have consensus
 - the ideas of what the consensus was is different depending on who you ask
@@ -8,9 +12,12 @@
 - slow
 - flaky
 - creates extra system load when parallelizing
+- affects entire floor
 
-## Subtle problem
+## Subtler problems
 - not test driven design, so it hides design problems
+- unnecessary
+- reduces pressure to add other types of tests
 
 ## Types of tests
 - unit, verify the insides
@@ -21,6 +28,9 @@
 - should only have one entry point, and it should never change
 - this obviates the need for an end to end test
 
+## What we are doing
+- adding new end to end tests, without considering design implications
+
 ## Are there legitimate reasons write new ones?
 - overcome limitation of compiler?
 - entry point?
@@ -28,9 +38,13 @@
 - feeling productive?
 - other reasons?  Let me know.
 
-## What we are doing
-- adding new end to end tests, without considering design implications
+## End to end tests instead of other types of tests
+- Gain productivity in the same sense that abandoning test driven design would save on typing
+- In other words, not at all.  
 
+## End to end tests in addition to other types of tests
+- Slows down the entire pipeline
+- Draws attention away from design decisions that could obviate the need for an end to end test
 
 ## How we should change
 - get on the same page
@@ -39,16 +53,3 @@
     - never allow
     - actively remove
 - enumerate what we consider good reasons
-
-## Notes
-we are continually adding more e2e test, not removing them
-
-what is the tradeoff if we shut them all off
-
-balance freedom of implementation choice against responsibility not to make code more difficult to maintain. 
-
-hello sample
-
-e2e tests make you feel productive in the same sense that not testing at all makes you feel productive
-
-story about early adopter of unit testing
