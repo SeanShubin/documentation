@@ -15,9 +15,9 @@
 - affects entire floor
 
 ## Subtler problems
-- not test driven design, so it hides design problems
-- unnecessary
+- no pressure on design
 - reduces pressure to add other types of tests
+- unnecessary
 
 ## Types of tests
 - unit, verify the insides
