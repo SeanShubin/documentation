@@ -7,15 +7,19 @@
 ## Obvious problems
 - slow
 - flaky
-- hard to parallelize
+- creates extra system load when parallelizing
 
 ## Subtle problem
-- not test driven design
+- not test driven design, so it hides design problems
 
 ## Types of tests
 - unit, verify the insides
 - integration, verify boundaries
 - health, verify the outsides
+
+## Entry points
+- should only have one entry point, and it should never change
+- this obviates the need for an end to end test
 
 ## Are there legitimate reasons write new ones?
 - overcome limitation of compiler?
@@ -25,6 +29,8 @@
 - other reasons?  Let me know.
 
 ## What we are doing
+- adding new end to end tests, without considering design implications
+
 
 ## How we should change
 - get on the same page
