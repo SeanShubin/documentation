@@ -53,3 +53,9 @@
     - never allow
     - actively remove
 - enumerate what we consider good reasons
+
+## Proposed addition to standards
+- Before adding a new end to end test, make the floor aware of the reasons you think it is necessary.
+- Only add the end to end test if the floor is unable to give you adequate support to address those reasons.
+- Support can be technical, if you don't know how to get proper coverage without an end to end test.
+- Support can also be in the form of help with refactoring, if the reason for the end to end test is to compensate for an architectual issue.
