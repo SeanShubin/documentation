@@ -32,8 +32,11 @@
     - a set of three types of tests with no overlapping concerns, that when taken together, are in principle able to detect any problem with the application code and/or configuration at the earliest possible moment.
 - logic test
     - a test of application logic that is deterministic and fast because it relies only on the rules of the programming language.
+    - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub to represent interaction with the database.  
 - boundary test
     - a test that verifies nothing that could be verified with a logic test, but rather verifies interaction between the application and non-configuration-specific behavior of a single collaborator beyond the applications control, such as the file system, system clock, system properties, network, database, etc.
+    - for example, a boundary test may verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any logic. 
 - configuration test
-    - a test that does nothing that could be done with a logic or boundary test, but rather verifies the configuration is such that dependant services are visible and responsive.
+    - a test that does nothing that could be done with a logic or boundary test, but rather verifies the configuration is such that external services are reachable and responsive.
+    - for example, a configuration test may verify that the database that a data access object depends on is up an running, but would not verify any particular behavior.
 
