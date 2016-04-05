@@ -37,8 +37,13 @@
 - this obviates the need for an end to end test on an entry point
 - the problem happens when you mix behavior with entry points
 
-## [Other types of tests](http://seanshubin.com/types-of-tests.svg)
-- logic, verify the insides
-    - logical unit, not compilation unit
-- boundary, verify boundaries
-- configuration, verify the outsides
+## Other types of tests
+- [types of tests](http://seanshubin.com/types-of-tests.svg)
+    - logic, verify the insides
+        - logical unit, not compilation unit
+    - boundary, verify boundaries
+    - configuration, verify the outsides
+- important note about types of tests
+    - no overlapping concerns
+    - boundary test does not check more than 1 boundary 
+
