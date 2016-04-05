@@ -1,24 +1,44 @@
 # End to End Tests
+- what is our goal?
 
-## Obvious problems
+## Simplicity (more important listed earlier)
+- Meet Customer Need
+- **Easy To Maintain**
+- Clearly Express Intent
+- No Duplicate Code
+- Concise As Possible
+
+## Early Feedback (better listed earlier)
+- Instant
+- Compile
+- Unit Test
+- Integration Test
+- **End to End Test**
+- Deployment Manual Test
+- Customer Feedback
+
+## Obvious problems with end to end tests
 - slow
 - flaky
+- hard to tell exactly where the problem is 
 - creates extra system load when parallelizing
 - affects all involved with same build pipeline
 
-## Subtler problems
+## Subtler problems with end to end tests
 - no pressure on design
 - reduces pressure to add other types of tests
 - unnecessary
-
-## [Other types of tests](http://seanshubin.com/types-of-tests.svg)
-- unit, verify the insides
-- integration, verify boundaries
-- health, verify the outsides
 
 ## Entry points
 - should only have one entry point, and it should never change
     - [console application](https://github.com/SeanShubin/hello/blob/master/src/main/scala/com/seanshubin/hello/ConsoleApplication.scala)
     - [web application](https://github.com/SeanShubin/hello-war/blob/master/src/main/scala/com/seanshubin/hello/war/EntryPointServlet.scala)
     - [web.xml](https://github.com/SeanShubin/hello-war/blob/master/src/main/webapp/WEB-INF/web.xml)
-- this obviates the need for an end to end test
+- this obviates the need for an end to end test on an entry point
+- the problem happens when you mix behavior with entry points
+
+## [Other types of tests](http://seanshubin.com/types-of-tests.svg)
+- logic, verify the insides
+    - logical unit, not compilation unit
+- boundary, verify boundaries
+- configuration, verify the outsides
