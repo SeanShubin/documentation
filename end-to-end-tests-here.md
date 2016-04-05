@@ -20,9 +20,12 @@
     - actively remove
 - enumerate what we consider reasons to tolerate an end to end test, including a plan to obviate such reasons in the future
 
-## Sean's proposal
-- Any test other than a logic, boundary, or configuration test will not be added until the floor has been made aware of perceived reason for such a test and had a chance to respond.
-- Responses may include opposing reasons, help with refactoring the design to eliminate the need for another type of test, help with knowledge of how it could be tested differently.
+## Proposed addition to standards
+- Before adding any test other than a logic, boundary, or configuration test, make the floor aware of the reasons you think it is necessary.
+- Only add the test if the floor is unable to give you adequate support to address those reasons.
+- Types of support
+    - Technical, if you don't know how to get proper coverage with a logic, boundary, or configuration test
+    - Refactoring, if the reason for the test is to compensate for an architectural issue.
 
 ## More precise definitions
 - logic, boundary, and configuration tests
@@ -33,3 +36,4 @@
     - a test that verifies nothing that could be verified with a logic test, but rather verifies interaction between the application and non-configuration-specific behavior of a single collaborator beyond the applications control, such as the file system, system clock, system properties, network, database, etc.
 - configuration test
     - a test that does nothing that could be done with a logic or boundary test, but rather verifies the configuration is such that dependant services are visible and responsive.
+
