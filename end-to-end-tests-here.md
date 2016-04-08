@@ -5,8 +5,13 @@
     - Easier for a single person to write once, but harder everyone to maintain perpetually
 - But we don't want to over-regulate!
     - Software engineering happens in objective reality, there are objectively better and worse ways of doing things.
-    - We have collective code ownership and a shared pipeline, certain types of decisions affect everyone else.
-    - Do we value developer autonomy so much that we allow individuals to slow the pace of the entire department? 
+    - We have collective code ownership and a shared pipeline, certain types of decisions affect everyone.
+    - Do we value developer autonomy so much that we allow individuals to slow the pace of the entire department?
+    - If so, why bother testing at all?  Why bother working on features?
+- But I feel like I might be missing something, and I need an end to end test for confidence that it will catch anything I miss.
+    - That lack of confidence is telling you something
+    - It is telling you that you don't have confidence your application's architecture
+    - Instead of adding an end to end test, introduce the appropriate abstractions at the proper boundaries, so you can get that same confidence without an end to end test
 
 ## What we are doing
 - constantly adding new end to end tests
@@ -18,14 +23,14 @@
     - only allow for certain reasons
     - never allow
     - actively remove
-- enumerate what we consider reasons to tolerate an end to end test, including a plan to obviate such reasons in the future
+- enumerate what we consider sufficient reasons to tolerate an end to end test, including a plan to obviate such reasons in the future
 
 ## Proposed addition to standards
 - Before adding any test other than a logic, boundary, or configuration test, make the floor aware of the reasons you think it is necessary.
 - Only add the test if the floor is unable to give you adequate support to address those reasons.
 - Types of support
     - Technical, if you don't know how to get proper coverage with a logic, boundary, or configuration test
-    - Refactoring, if the reason for the test is to compensate for an architectural issue.
+    - Refactoring, if some existing bad architecture is leaving you without good testing options
 
 ## More precise definitions
 - logic, boundary, and configuration tests
@@ -35,8 +40,7 @@
     - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub to represent interaction with the database.  
 - boundary test
     - a test that verifies nothing that could be verified with a logic test, but rather verifies interaction between the application and non-configuration-specific behavior of a single collaborator beyond the applications control, such as the file system, system clock, system properties, network, database, etc.
-    - for example, a boundary test may verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any logic. 
+    - for example, a boundary test may verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any application logic. 
 - configuration test
     - a test that does nothing that could be done with a logic or boundary test, but rather verifies the configuration is such that external services are reachable and responsive.
-    - for example, a configuration test may verify that the database that a data access object depends on is up an running, but would not verify any particular behavior.
-
+    - for example, a configuration test may verify that the database that a data access object depends on is up and running, but would not verify any particular behavior.
