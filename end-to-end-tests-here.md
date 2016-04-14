@@ -19,6 +19,10 @@
 - But this does not apply to dynamically typed languages!
     - Dynamic typing only prevents the compiler from catching mistakes.
     - It does not interfere with your ability to move logic out of entry points and into places covered by logic, boundary, and configuration tests.
+- We need to quantify how much end to end tests are actually costing us before deciding we not to use them.
+    - Is it really the case that the deciding factor is a matter of degree?
+    - If so, lets decide what metrics have sufficient accuracy and precision to tell us how much end to end tests are harming us, and how much harm it takes to justify discontinuing the practice of adding new end to end tests.
+    - If it is not going to affect our decision, we should not spend the effort.  I don't want to collect a bunch of data only to find there is no consensus regarding how to act on it. 
 - But I am absolutely certain that end to end tests are necessary, and I stand by this in spite of my complete inability to point a single example in the history of our code base that demonstrates this is true.
     - I suspect this is due to some architectural nonsense you have gone blind to due to your reliance on end to end tests.
     - Once a concrete example is provided, I will be happy to identify and explain where the architectural problem lies.
