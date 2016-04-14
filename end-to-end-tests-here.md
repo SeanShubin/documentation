@@ -26,7 +26,7 @@
 - But I am absolutely certain that end to end tests are necessary, and I stand by this in spite of my complete inability to point a single example in the history of our code base that demonstrates this is true.
     - I suspect this is due to some architectural nonsense you have gone blind to due to your reliance on end to end tests.
     - Once a concrete example is provided, I will be happy to identify and explain where the architectural problem lies.
-    - Unsubstantiated claims are time consuming to address because it is so hard to figure out how your concern would manifest in reality. I suggest that you modulate the fervor and certainty for such claims to be in proportion to what is warranted by the evidence you are willing to provide.
+    - Unsubstantiated claims are time consuming to address because it is so hard to figure out how the concern would manifest in reality. I suggest modulating the fervor and certainty of such claims to be in proportion to what is warranted by the evidence you are willing to provide.
 
 ## What we are doing
 - constantly adding new end to end tests
