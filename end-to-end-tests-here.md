@@ -2,24 +2,27 @@
 
 ## Common Arguments for End to End tests
 - But end to end tests are easier!
-    - Easier for a single person to write once, but harder everyone to maintain perpetually.
+    - You may be thinking of a narrow sense in which they are easier for a single person to write initially.
+    - However, they make it harder everyone to maintain perpetually.
 - But we don't want to over-regulate!
-    - We have collective code ownership and a shared pipeline
-    - It is entirely reasonable to object to individual decisions when they harm everyone's productivity 
+    - We have collective code ownership and a shared pipeline.
+    - We should not be taking time from and giving frustration to other engineers without giving them a chance to review your reasons for affecting them in such a manner.
 - But I feel like I might be missing something, and I need an end to end test for confidence that it will catch anything I miss.
-    - Instead of adding an end to end test, introduce the appropriate abstractions at the proper boundaries, so you can get that same confidence without an end to end test.
     - By using end to end tests as a crutch, you are making it impossible to address your architectural blind spots.
+    - Experiment with introducing abstractions at boundaries that give you that confidence without an end to end test.
 - But I don't know how to test it without an end to end test!
     - Move your behavior out of entry points, and into places covered by logic, boundary, and configuration tests.
     - Now you know.
 - But we aren't skilled enough coders to write in a way that does not need end to end tests!
     - Once you have to proper knowledge, it only requires paying attention and discipline.
-    - This is a matter of asking for help if you are stuck and providing feedback when asked, both things we control.
+    - This is a matter of asking for help if you are stuck, and providing feedback when asked, both things we control.
 - But this does not apply to dynamically typed languages!
     - Dynamic typing only prevents the compiler from catching mistakes.
     - It does not interfere with your ability to move logic out of entry points and into places covered by logic, boundary, and configuration tests.
 - But I am absolutely certain that end to end tests are necessary, and I stand by this in spite of my complete inability to point a single example in the history of our code base that demonstrates this is true.
-    - Adjust your level of certainty to the level of evidence, if you have no evidence, you should have no certainty.
+    - I suspect this is due to some architectural nonsense you have gone blind to due to your reliance on end to end tests.
+    - Once a concrete example is provided, I will be happy to identify and explain where the architectural problem lies.
+    - Unsubstantiated claims are time consuming to address, I ask that you limit your fervor and certainty for such claims to that which is warranted by the evidence you are willing to provide.
 
 ## What we are doing
 - constantly adding new end to end tests
