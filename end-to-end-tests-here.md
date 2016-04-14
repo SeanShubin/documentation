@@ -9,13 +9,13 @@
     - We should not be taking time from and giving frustration to other engineers without giving them a chance to review your reasons for affecting them in such a manner.
 - But I feel like I might be missing something, and I need an end to end test for confidence that it will catch anything I miss.
     - By using end to end tests as a crutch, you are making it impossible to address your architectural blind spots.
-    - Experiment with introducing abstractions at boundaries that give you that confidence without an end to end test.
+    - Experiment with introducing abstractions at boundaries that give you that confidence without an end to end test, and don't be afraid to ask for help.
 - But I don't know how to test it without an end to end test!
     - Move your behavior out of entry points, and into places covered by logic, boundary, and configuration tests.
     - Now you know.
 - But we aren't skilled enough coders to write in a way that does not need end to end tests!
     - Once you have to proper knowledge, it only requires paying attention and discipline.
-    - This is a matter of asking for help if you are stuck, and providing feedback when asked, both things we control.
+    - This is a matter of asking for help if you are stuck, and providing feedback to others when they are stuck, both things we control.
 - But this does not apply to dynamically typed languages!
     - Dynamic typing only prevents the compiler from catching mistakes.
     - It does not interfere with your ability to move logic out of entry points and into places covered by logic, boundary, and configuration tests.
