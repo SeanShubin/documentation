@@ -46,9 +46,10 @@
 ## More precise definitions
 - logic, boundary, and configuration tests
     - a set of three types of tests with no overlapping concerns, that when taken together, are in principle able to detect any problem with the application code and/or configuration at the earliest possible moment.
+    - explicitly not included, are tests that fall into more than one category, and tests that involve more than one boundary.
 - logic test
     - a test of application logic that is deterministic and fast because it relies only on the rules of the programming language.
-    - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub to represent interaction with the database.  
+    - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub or fake to represent interaction with the database.  
 - boundary test
     - a test that verifies nothing that could be verified with a logic test, but rather verifies interaction between the application and non-configuration-specific behavior of a single collaborator beyond the applications control, such as the file system, system clock, system properties, network, database, etc.
     - for example, a boundary test may verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any application logic. 
