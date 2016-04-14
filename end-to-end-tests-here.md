@@ -41,13 +41,16 @@
 - enumerate what we consider sufficient reasons to tolerate an end to end test, including a plan to obviate such reasons in the future
 
 ## Proposed addition to standards
+
+### Types of tests
+- Keep application behavior out of entry points, and into places covered by [logic, boundary, or configuration](http://seanshubin.com/types-of-tests.svg) tests.
 - Before adding any test other than a logic, boundary, or configuration test, make the floor aware of the reasons you think it is necessary.
 - Only add the test if the floor is unable to give you adequate support to address those reasons.
 - Types of support
     - Technical, if you don't know how to get proper coverage with a logic, boundary, or configuration test
     - Refactoring, if some existing bad architecture is leaving you without good testing options
 
-## More precise definitions
+### More precise definitions
 - logic, boundary, and configuration tests
     - a set of three types of tests with no overlapping concerns, that when taken together, are in principle able to detect any problem with the application code and/or configuration at the earliest possible moment.
     - explicitly not included, are tests that fall into more than one category, and tests that involve more than one boundary.
