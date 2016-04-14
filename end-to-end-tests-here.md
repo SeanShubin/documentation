@@ -29,7 +29,7 @@
     - Unsubstantiated claims are time consuming to address because it is so hard to figure out how the concern would manifest in reality. I suggest modulating the fervor and certainty of such claims to be in proportion to what is warranted by the evidence you are willing to provide.
 
 ## What we are doing
-- constantly adding new end to end tests
+- adding new end to end tests without buy-in from those affected by them
 - many cases we assume it goes without saying that we need an end to end test
 
 ## How we should change
