@@ -55,10 +55,10 @@
     - no boundary test may test more than one boundary.
 - logic test
     - a test of application logic that is deterministic and fast because it relies only on the rules of the programming language.
-    - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub or fake to represent interaction with the database.  
+    - for example, a logic test might verify that a service invokes a data access object with the proper parameters, using a stub or fake to represent interaction with the database.  
 - boundary test
     - a test that verifies nothing that could be verified with a logic test, but rather verifies interaction between the application and non-configuration-specific behavior of a single collaborator beyond the applications control, such as the file system, system clock, system properties, network, database, etc.
-    - for example, a boundary test may verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any application logic. 
+    - for example, a boundary test might verify that a data access object can read back what it writes into a live database spun up for testing, but would not be checking any application logic. 
 - configuration test
     - a test that does nothing that could be done with a logic or boundary test, but rather verifies the configuration is such that external services are reachable and responsive.
-    - for example, a configuration test may verify that the database that a data access object depends on is up and running, but would not verify any particular behavior.
+    - for example, a configuration test might verify that the database that a data access object depends on is up and running, but would not verify any particular behavior.
