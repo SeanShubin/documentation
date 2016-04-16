@@ -41,7 +41,7 @@
 ## Proposed addition to standards
 
 ### Types of tests
-- Keep application behavior out of entry points, and into places covered by [logic, boundary, or configuration](http://seanshubin.com/types-of-tests.svg) tests.
+- Keep application behavior out of hard to test places, such as entry points, and into places covered by [logic, boundary, or configuration](http://seanshubin.com/types-of-tests.svg) tests.
 - Before adding any test other than a logic, boundary, or configuration test, make the floor aware of the reasons you think it is necessary.
 - Only add the test if the floor is unable to give you adequate support to address those reasons.
 - Types of support
