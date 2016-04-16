@@ -23,10 +23,8 @@
     - Is it really the case that the deciding factor is a matter of degree?
     - If so, lets decide what metrics have sufficient accuracy and precision to tell us how much end to end tests are harming us, and how much harm it takes to justify discontinuing the practice of adding new end to end tests.
     - If it is not going to affect our decision, we should not spend the effort.  It would be disappointing to collect a bunch of data only to find there is no consensus regarding how to act on it. 
-- But I am absolutely certain that end to end tests are necessary, and I stand by this in spite of my complete inability to point a single example in the history of our code base that demonstrates this is true.
-    - I suspect this is due to some architectural nonsense you have gone blind to due to your reliance on end to end tests.
-    - Once a concrete example is provided, I will be happy to identify and explain where the architectural problem lies.
-    - Unsubstantiated claims are time consuming to address because it is so hard to figure out how the concern would manifest in reality. I suggest modulating the fervor and certainty of such claims to be in proportion to what is warranted by the evidence you are willing to provide.
+- There are cases where end to end tests are necessary
+    - Once you show me a concrete example of such a case, I will show you that what is really going on is some architectural nonsense you have gone blind to due to your reliance on end to end tests.
 
 ## What we are doing
 - adding new end to end tests without buy-in from those affected by them
@@ -53,7 +51,8 @@
 ### More precise definitions
 - logic, boundary, and configuration tests
     - a set of three types of tests with no overlapping concerns, that when taken together, are in principle able to detect any problem with the application code and/or configuration at the earliest possible moment.
-    - explicitly not included, are tests that fall into more than one category, and tests that involve more than one boundary.
+    - no test may include concerns reserved another type of test.
+    - no boundary test may test more than one boundary.
 - logic test
     - a test of application logic that is deterministic and fast because it relies only on the rules of the programming language.
     - for example, a logic test may verify that a service invokes a data access object with the proper parameters, using a stub or fake to represent interaction with the database.  
