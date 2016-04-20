@@ -23,6 +23,7 @@
 - hard to tell exactly where the problem is 
 - creates extra system load when parallelizing
 - affects all involved with same build pipeline
+- difficult to run locally
 
 ## Subtler problems with end to end tests
 - no pressure on design
