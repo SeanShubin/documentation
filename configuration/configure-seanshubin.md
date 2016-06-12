@@ -16,13 +16,17 @@ Add a user
     useradd -m -d /home/sean sean
     passwd sean
 
+Configure git
+=============
+
+
 Update tools
 ===
 
     apt-get update
     apt-get autoremove
-    apt-get upgrade -y
-    apt-get install -y git tree nginx supervisor
+    apt-get -y upgrade
+    apt-get -y install nginx supervisor git
 
 Configure nginx
 ===
@@ -35,7 +39,7 @@ Don't forget to comment out the listed includes.
     server {
         listen       80;
         server_name  localhost;
-        root /home/sean/Copy/www;
+        root /home/sean/git/www;
         error_page 404 /index.html;
         location /foo/ {
             proxy_pass http://127.0.0.1:4000;
@@ -61,7 +65,7 @@ Install Java 8
 ===
 
     wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz
-    mkdir /opt/jdk
+    mkdir -p /opt/jdk
     tar -zxvf jdk-8u91-linux-x64.tar.gz -C /opt/jdk
     rm jdk-8u91-linux-x64.tar.gz
     update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_91/bin/java 100
