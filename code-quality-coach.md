@@ -9,7 +9,7 @@ Specific duties involve vetting, training, and tooling
 ### Vetting
 - Solicit feedback from the department regarding coding practices
 - Vet coding practices to determine their advantages and disadvantages
-- Highlight cases where one coding practice is clearly better than another
+- Make recommendations to the department regarding which coding practices should be preferred or avoided
 
 ### Training
 - Prepare training materials
