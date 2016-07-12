@@ -6,17 +6,17 @@ The code quality coach is responsible for protecting code bases we maintain agai
 
 ## Duties
 
-### Vet Coding Practices
+### Vetting
 - Solicit feedback from the department regarding coding practices
 - Vet coding practices to determine their advantages and disadvantages
 - Make recommendations to the department regarding which coding practices should be preferred or avoided
 
-### Training to communicate coding practices
+### Training
 - Prepare training materials
 - Administer training
 - Make training available to be self administered
 
-### Tooling to detect code quality issues
+### Tooling
 - Create tooling to detect code quality issues
 - Integrate tooling with our process to make sure code quality regressions are automatically detected
 - Help department understand how to take advantage of tooling
