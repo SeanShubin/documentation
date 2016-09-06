@@ -7,14 +7,8 @@ in maven project to deploy
         </repository>
     </distributionManagement>
 
-in settings.xml
-    <server>
-        <id>maven-staging</id>
-        <username>SeanShubin</username>
-        <password>***</password>
-    </server>
 
+mvn verify gpg:sign deploy -Dgpg.passphrase=*** --settings=/Users/sshubin/.m2/deploy-to-maven-central-settings.xml
 
-mvn deploy -Dgpg.passphrase=***
 https://oss.sonatype.org/#stagingRepositories
-find . | grep "\-javadoc\.jar"
+
