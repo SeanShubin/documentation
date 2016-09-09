@@ -8,7 +8,7 @@ in maven project to deploy
     </distributionManagement>
 
 
-mvn clean verify gpg:sign deploy -Dgpg.passphrase=*** --settings=/Users/seanshubin/.m2/deploy-to-maven-central-settings.xml
+mvn clean verify gpg:sign deploy -Dgpg.passphrase=*** -Dgpg.executable=gpg2 --settings=/Users/seanshubin/.m2/deploy-to-maven-central-settings.xml
 
 https://oss.sonatype.org/#stagingRepositories
 
