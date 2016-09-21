@@ -1,14 +1,10 @@
 
 in maven project to deploy
-    <distributionManagement>
-        <repository>
-            <id>maven staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-    </distributionManagement>
+
+https://github.com/SeanShubin/deploytest
 
 
-mvn clean verify gpg:sign deploy -Dgpg.passphrase=*** -Dgpg.keyname=seanshubin.com -Dgpg.executable=gpg2 --settings=/Users/seanshubin/.m2/deploy-to-maven-central-settings.xml
+mvn deploy -Dgpg.passphrase=*** -Dgpg.keyname=seanshubin.com --settings=/Users/seanshubin/.m2/deploy-to-maven-central-settings.xml
 
 https://oss.sonatype.org/#stagingRepositories
 
