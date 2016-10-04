@@ -1,6 +1,7 @@
 # Maintainability
-- This is what I think is the most important concept in order to write maintainable code
+- What is the most important concept for writing maintainable code
 - Separate the parts you do control from the parts you don't
+- A way to see if you have done this is to check how easy the code is to test
 
 # Context
 - We are talking about the code you are writing
