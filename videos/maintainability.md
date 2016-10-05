@@ -1,7 +1,7 @@
 # Maintainability
-- Why maintainable code
+- Why maintainable code?
     - Code is initially written once by few
-    - Code is maintained prepetually by many
+    - Code is maintained perpetually by many
 - Properties of maintainable code
     - High Cohesion, closely related code in the same place
     - Low Coupling, limited dependencies on other code
@@ -9,9 +9,6 @@
     - Design by Contract, favor the caller, not the implementor
     - Easy to Test, sufficient isolation to test parts individually
 - Separate the parts you do control from the parts you don't
-
-# Context
-- We are talking about the code you are writing
 
 # Definitions
 - Referential Transparency
