@@ -1,5 +1,7 @@
 # Maintainability
-- What is the most important concept for writing maintainable code?
+- Why maintainable code
+    - Code is initially written once by few
+    - Code is maintained prepetually by many
 - Properties of maintainable code
     - High Cohesion, closely related code in the same place
     - Low Coupling, limited dependencies on other code
