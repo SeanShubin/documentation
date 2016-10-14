@@ -23,3 +23,5 @@
 - Devon                                 (library)
 - Computation Models                    (book)
 - Replace Conditional with Polymorphism (java)
+- Schulze Voting                        (app)
+- Nulls                                 (scala) 
