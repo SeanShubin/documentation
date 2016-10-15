@@ -24,4 +24,6 @@
 - Computation Models                    (book)
 - Replace Conditional with Polymorphism (java)
 - Schulze Voting                        (app)
-- Nulls                                 (scala) 
+- Nulls                                 (scala)
+- Test coverage                         (java)
+- Deploy to maven central               (java)
