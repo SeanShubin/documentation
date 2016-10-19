@@ -27,3 +27,4 @@
 - Nulls                                 (scala)
 - Test coverage                         (java)
 - Deploy to maven central               (java)
+- tupled                                (scala)
