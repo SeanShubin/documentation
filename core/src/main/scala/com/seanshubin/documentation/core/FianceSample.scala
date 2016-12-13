@@ -34,7 +34,9 @@ object FianceSample extends App {
       |""".stripMargin
 
   val generateWord: (String, String) => String = (word, caption) => {
-    val p = s"  <p>$word - $caption</p>"
+    val codePointCount = word.codePointCount(0, word.length)
+    val length = word.length
+    val generalInfo = Seq(s"<p>$word</p>", s"<p>$caption</p>", s"<p>length = $length</p>", s"<p>code points = $codePointCount</p>").mkString("\n")
     val header =
       """
         |  <table>
@@ -46,11 +48,13 @@ object FianceSample extends App {
         |  </table>
         |""".stripMargin
     val body = generateRows(word)
-    p + header + body + footer
+    generalInfo + header + body + footer
   }
 
+  def toHex(ch: Char): String = "0x" + ch.toInt.toHexString.toUpperCase()
+
   val charFunction: Char => String = x => x.toString
-  val utf16Function: Char => String = x => x.toInt.toHexString.toUpperCase()
+  val utf16Function: Char => String = toHex
 
   val functions = Seq(("character", charFunction), ("UTF-16", utf16Function))
 
