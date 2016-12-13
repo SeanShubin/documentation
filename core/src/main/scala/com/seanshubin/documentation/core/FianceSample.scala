@@ -53,7 +53,16 @@ object FianceSample extends App {
 
   def toHex(ch: Char): String = "0x" + ch.toInt.toHexString.toUpperCase()
 
-  val charFunction: Char => String = x => x.toString
+  val charFunction: Char => String = x => {
+    if (Character.isHighSurrogate(x)) {
+      s"$x<br>high surrogate"
+    } else if (Character.isLowSurrogate(x)) {
+      s"$x<br>low surrogate"
+    } else {
+      x.toString
+    }
+  }
+
   val utf16Function: Char => String = toHex
 
   val functions = Seq(("character", charFunction), ("UTF-16", utf16Function))

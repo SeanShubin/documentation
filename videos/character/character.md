@@ -18,6 +18,9 @@ Examples are alphabetic letters, chinese characters, numbers, and punctuation ma
 The shape of a marking representing a grapheme.
 Different glyphs may represent the same grapheme. 
 
+### Ligature
+Two or more graphemes joined as a single glyph, such as æ.
+
 ### Font
 A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
 
@@ -103,10 +106,7 @@ Authors should not use ASCII-incompatible encodings (i.e. those that don't map t
 
 ```text
 unicode code point (4 bytes) 00 01 d1 1e
-high surrogate     (2 bytes) d8 34
-low surrogate      (2 bytes) dd 1e
 utf 8 bytes        (4 bytes) f0 9d 84 9e
-utf 16 bytes       (6 bytes) fe ff d8 34 dd 1e
 ```
 
 ### Interpreting the utf-8 bytes
@@ -127,10 +127,13 @@ utf 16 bytes       (6 bytes) fe ff d8 34 dd 1e
 | 9e  | 10011110 |
 
 ```text
-hex     01d11e
-binary  000000011101000100011110
-utf8    11110000 10011101 10000100 10011110
-trim         000   011101   000100   011110
-compact    000011101000100011110
-binary  000000011101000100011110
+hex      01d11e
+binary   000000011101000100011110
+
+utf8-hex    F   0    9   D    8   4    9   E
+utf8     11110000 10011101 10000100 10011110
+binary        000   011101   000100   011110
+         00001 11010001 00011110
+             1    D   1    1   E
+hex      01d11e
 ```
