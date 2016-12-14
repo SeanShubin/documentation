@@ -2,13 +2,15 @@
 I am going to given you an overview of some of the lessor known characteristics of the visual symbol known as the "character"
 
 ## What does a software engineer need to know about characters?
-When software engineers talk about characters they are likely referring to code units,
-while when their customers talk about characters they are likely referring to graphemes.
 There is a lot of terminology surrounding characters,
 and the terms are so interrelated it is hard to define them all in a non-circular manner.
 So I am going to try to provide definitions that are unambiguous even though some are circular. 
 
 ## Character Terminology 
+
+### Character
+For technical people, usually refers to either a code unit or code point
+For business people, usually refers to a grapheme or ligature
 
 ### Grapheme
 The smallest meaningful contrastive unit of a writing system.
@@ -21,24 +23,22 @@ Different glyphs may represent the same grapheme.
 ### Ligature
 Two or more graphemes joined as a single glyph, such as æ.
 
-### Font
-A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
-
-### Font Family / Typeface
-A range of fonts that share an overall design
-
-### Character
-Intended to be a computer representation of a grapheme, but it got more complicated than that.
-
 ### Code Point
 Represents a single character in a code space.
 This is a number that corresponds to a single character.
+When an engineer is talking about hte 
 
 ### Code Space
 A range of numerical values available for encoding characters.
 
 ### Code Unit
 Smallest computer unit with which to build code points.
+
+### Font
+A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
+
+### Font Family / Typeface
+A range of fonts that share an overall design
 
 ### Encoding
 The rules for converting between code units and characters in a charset.
@@ -87,13 +87,26 @@ No serif's
         new InputStreamReader(new FileInputStream("README.md"), Charset.defaultCharset());
 
 
-## HTML 5 example
-    <!-- In HTML5 -->
-    <meta charset="utf-8">
+## HTML 5 
+For html documents, specify the charset in a meta element, like so
 
-This <meta> element must be inside the <head> element and within the 1024 first bytes of the page, as some browsers only look at these first bytes before choosing a character set for the page.
-Authors should not use ASCII-incompatible encodings (i.e. those that don't map the 8-bit code points 0x20 to 0x7E to the Unicode 0x0020 to 0x007E code points) as these represent a security risk: browsers not supporting them may interpret benign content as HTML Elements. This is the case of at least the following charsets: JIS_C6226-1983, JIS_X0212-1990, HZ-GB-2312, JOHAB, the ISO-2022 family, and the EBCDIC family.
+    <!DOCTYPE HTML>
+    <HTML>
+     <HEAD>
+      <META CHARSET="UTF-8">
+     </HEAD>
+    <BODY>
 
+So how do we read the charset attribute without knowing what the charset is? 
+> 4.2.5.5 Specifying the document's character encoding
+> 
+> A character encoding declaration is a mechanism by which the character encoding used to store or transmit a document is specified.
+> 
+> The following restrictions apply to character encoding declarations:
+> 
+> The character encoding name given must be an ASCII case-insensitive match for one of the labels of the character encoding used to serialize the file. [ENCODING]
+> The character encoding declaration must be serialized without the use of character references or character escapes of any kind.
+> The element containing the character encoding declaration must be serialized completely within the first 1024 bytes of the document.
 
 ##G Clef Sample
 
@@ -104,10 +117,43 @@ Authors should not use ASCII-incompatible encodings (i.e. those that don't map t
 ### Sample application
 [source](core/src/main/scala/com/seanshubin/documentation/core/ClefSample.scala)
 
+| hex | binary |
+|-----|--------|
+| 0   | 0000   |
+| 1   | 0001   |
+| 2   | 0010   |
+| 3   | 0011   |
+| 4   | 0100   |
+| 5   | 0101   |
+| 6   | 0110   |
+| 7   | 0111   |
+| 8   | 1000   |
+| 9   | 1001   |
+| A   | 1010   |
+| B   | 1011   |
+| C   | 1100   |
+| D   | 1101   |
+| E   | 1110   |
+| F   | 1111   |
+
 ```text
-unicode code point (4 bytes) 00 01 d1 1e
 utf 8 bytes        (4 bytes) f0 9d 84 9e
+unicode code point (4 bytes) 00 01 d1 1e
 ```
+
+| hex | binary   |
+|-----|----------|
+| F0  | 11110000 |
+| 9D  | 10011101 |
+| 84  | 10000100 |
+| 9E  | 10011110 |
+
+| hex | binary   |
+|-----|----------|
+| 00  | 00000000 |
+| 01  | 00000001 |
+| D1  | 11010001 |
+| 1E  | 00011110 |
 
 ### Interpreting the utf-8 bytes
 | Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5 | Byte 6 | Significant Bits |
@@ -119,21 +165,10 @@ utf 8 bytes        (4 bytes) f0 9d 84 9e
 |111110xx|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx|        | 26               |
 |1111110x|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx|10xxxxxx| 31               |
 
-| hex | binary   |
-|-----|----------|
-| f0  | 11110000 |
-| 9d  | 10011101 |
-| 84  | 10000100 |
-| 9e  | 10011110 |
-
 ```text
-hex      01d11e
-binary   000000011101000100011110
-
-utf8-hex    F   0    9   D    8   4    9   E
-utf8     11110000 10011101 10000100 10011110
-binary        000   011101   000100   011110
-         00001 11010001 00011110
-             1    D   1    1   E
-hex      01d11e
+utf8-hex       F   0    9   D    8   4    9   E
+utf8        11110000 10011101 10000100 10011110
+significant      000   011101   000100   011110
+            00001 11010001 00011110
+code point      1    D   1    1   E
 ```

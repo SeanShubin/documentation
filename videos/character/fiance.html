@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Fiance</title>
+</head>
+<body>
+<p>fiancé</p>
+<p>for the ' é ', we are using Latin-1 Supplement: LATIN SMALL LETTER E WITH ACUTE</p>
+<p>length = 6</p>
+<p>code points = 6</p>
+  <table>
+    <tbody>
+      <tr><td>character</td><td>f</td><td>i</td><td>a</td><td>n</td><td>c</td><td>é</td></tr>
+      <tr><td>UTF-16</td><td>0x66</td><td>0x69</td><td>0x61</td><td>0x6E</td><td>0x63</td><td>0xE9</td></tr>
+    </tbody>
+  </table>
+  <hr>
+<p>fiancé</p>
+<p>for the ' é ', we are using Combining Diacritical Marks: COMBINING ACUTE ACCENT</p>
+<p>length = 7</p>
+<p>code points = 7</p>
+  <table>
+    <tbody>
+      <tr><td>character</td><td>f</td><td>i</td><td>a</td><td>n</td><td>c</td><td>e</td><td>́</td></tr>
+      <tr><td>UTF-16</td><td>0x66</td><td>0x69</td><td>0x61</td><td>0x6E</td><td>0x63</td><td>0x65</td><td>0x301</td></tr>
+    </tbody>
+  </table>
+  <hr>
+<p>ﬁancé</p>
+<p>for the ' ﬁ ', we are using Alphabetic Presentation Forms: LATIN SMALL LIGATURE FI</p>
+<p>length = 5</p>
+<p>code points = 5</p>
+  <table>
+    <tbody>
+      <tr><td>character</td><td>ﬁ</td><td>a</td><td>n</td><td>c</td><td>é</td></tr>
+      <tr><td>UTF-16</td><td>0xFB01</td><td>0x61</td><td>0x6E</td><td>0x63</td><td>0xE9</td></tr>
+    </tbody>
+  </table>
+  <hr>
+<p>𝖿𝗂𝖺𝗇𝖼𝖾</p>
+<p>for all of the characters, we are using Mathematical Alphanumeric Symbols</p>
+<p>length = 12</p>
+<p>code points = 6</p>
+  <table>
+    <tbody>
+      <tr><td>character</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td><td>?<br>high surrogate</td><td>?<br>low surrogate</td></tr>
+      <tr><td>UTF-16</td><td>0xD835</td><td>0xDDBF</td><td>0xD835</td><td>0xDDC2</td><td>0xD835</td><td>0xDDBA</td><td>0xD835</td><td>0xDDC7</td><td>0xD835</td><td>0xDDBC</td><td>0xD835</td><td>0xDDBE</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

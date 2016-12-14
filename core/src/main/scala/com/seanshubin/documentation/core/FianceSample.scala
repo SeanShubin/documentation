@@ -85,7 +85,7 @@ object FianceSample extends App {
   }
 
   val charset = StandardCharsets.UTF_8
-  val path = Paths.get("videos", "fiance.html")
+  val path = Paths.get("videos", "character", "fiance.html")
 
   def emit(s: String): Unit = {
     println(s)
