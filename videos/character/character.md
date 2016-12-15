@@ -79,7 +79,7 @@ A small line attached to the ends of glyphs
 ### Sans Serif
 No serif's
 
-[Serif vs. Sans Serif](videos/character/serif.html)
+[Serif vs. Sans Serif](serif.html)
 
 ## Java example
 
