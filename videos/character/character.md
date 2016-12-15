@@ -50,6 +50,9 @@ Common font families are Helvetica, Arial, Times New Roman, and Courier.
 
 ### Unicode
 A standard who's goal is to unify all languages by providing a consistent way to encode text.
+This means assigning a number to every graphme, ligature, accent, punctuation mark, and so on.
+Even some obscure alphabets no longer used are included, sometimes when we don't even have complete information about the meaning of the letters.
+Emoji support was added as of unicode 6.0.
 
 ### UTF
 Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
