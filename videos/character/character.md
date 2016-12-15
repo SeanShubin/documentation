@@ -6,11 +6,12 @@ Sample using the word [fiancé](fiance.html)
 ## Character Terminology 
 There is a lot of terminology surrounding characters,
 and the terms are so interrelated it is hard to define them all in a non-circular manner.
-So I am going to try to provide definitions that are unambiguous even though some are circular. 
+So I am going to try to provide definitions that are meaningful even though some are circular. 
 
 ### Character
 For technical people, usually refers to either a code unit or code point.
 For business people, usually refers to a grapheme or ligature.
+The different ways this word is used is a source of a lot of confusion, especially since it is used in the definitions of other terms, but if once you know the entire vocabulary, you can usually figure out what it means from context. 
 
 ### Grapheme
 The smallest meaningful contrastive unit of a writing system.
