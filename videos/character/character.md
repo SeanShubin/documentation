@@ -35,10 +35,11 @@ Smallest computer unit with which to build code points.
 In most programming languages, when you get the length of a string, you are counting the number of code units.
 
 ### Charset
-A mapping between characters and corresponding numerical values in the code space.
+A set of characters that can be mapped into a code space
 
 ### Encoding
 The rules for converting between code units and characters in a charset.
+If the size of a code unit can be different from the size of a code point, this will involve converting between these as well.
 
 ### Font
 A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
