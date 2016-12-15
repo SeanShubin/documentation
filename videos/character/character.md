@@ -55,11 +55,12 @@ Common font families are Helvetica, Arial, Times New Roman, and Courier.
 A standard who's goal is to unify all languages by providing a consistent way to encode text.
 This means assigning a number to every graphme, ligature, accent, punctuation mark, and so on.
 Even some obscure alphabets that are no longer used are included.
-For some of these alphabets when we don't even have complete information about the meaning of the letters such as the alphabetical order.
+For some of these alphabets we don't even have complete information about the meaning of the letters such as the alphabetical order.
 Emoji support was added as of unicode 6.0.
 
 ### UTF
-Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
+Unicode transformation format.
+It refers to a set of encodings that support all unicode code points.
 
 ### UTF-8
 A variable length mapping between 8-bit code units and unicode code points, where each code point may be represented as between 1 and 6 code units.
@@ -67,7 +68,8 @@ UTF-8 is designed to be compatible with ASCII.
 Currently, no unicode code point requires more than 4 UTF-8 code units.  
 
 ### UTF-16
-Originally intended to be a fixed length mapping, UTF-16 now a variable length mapping between 16-bit code units and unicode code points.
+Originally intended to be a fixed length mapping,
+It is now a variable length mapping between 16-bit code units and unicode code points.
 That UTF-16 is such a common representation in so many languages is unfortunate.
 UTF-16 has the disadvantage of taking more space than UTF-8 for the most common characters, with none of the advantages that would have come with being a fixed length encoding.
 So between UTF-8, variable but concise, and UTF-32, fixed but taking up much more space, we have the worst of both worlds.  
@@ -88,7 +90,7 @@ American Standard Code for Information Interchange.  Includes the characters Ame
 
 ### ISO-8859-1
 Character encoding with support for languages used in the Americas, Western Europe, Oceania, and much of Africa.
-Noteworthy because it is the default encoding of HTTP content.
+It is noteworthy because it is the default encoding of HTTP content.
 
 ### Serif
 A small line attached to the ends of glyphs
