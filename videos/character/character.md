@@ -24,7 +24,7 @@ Different glyphs may represent the same grapheme.
 For example, there are many different styles an 'a' can be written in that still represent an 'a'.
 
 ### Ligature
-Two or more graphemes joined as a single glyph, such as the ash 'æ'
+Two or more graphemes joined as a single glyph, such as the ash character 'æ'
 
 ### Code Point
 Represents a single character in a code space.
@@ -42,7 +42,7 @@ A set of characters that can be mapped into a code space
 
 ### Encoding
 The rules for converting between code units and characters in a charset.
-If the size of a code unit can be different from the size of a code point, this will involve converting between these as well.
+If the size of a code unit can be different from the size of a code point, this will involve converting between code units and code points as well.
 
 ### Font
 A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
@@ -54,34 +54,41 @@ Common font families are Helvetica, Arial, Times New Roman, and Courier.
 ### Unicode
 A standard who's goal is to unify all languages by providing a consistent way to encode text.
 This means assigning a number to every graphme, ligature, accent, punctuation mark, and so on.
-Even some obscure alphabets no longer used are included, sometimes when we don't even have complete information about the meaning of the letters.
+Even some obscure alphabets that are no longer used are included.
+For some of these alphabets when we don't even have complete information about the meaning of the letters such as the alphabetical order.
 Emoji support was added as of unicode 6.0.
 
 ### UTF
 Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
 
 ### UTF-8
-A variable length mapping between 8-bit code units and unicode code points, where each code point may be represented as 1-6 code units.
-Designed to be compatible with ASCII.  Currently, no unicode code point requires more than 4 UTF-8 code units.  
+A variable length mapping between 8-bit code units and unicode code points, where each code point may be represented as between 1 and 6 code units.
+UTF-8 is designed to be compatible with ASCII.
+Currently, no unicode code point requires more than 4 UTF-8 code units.  
 
 ### UTF-16
-Originally intended to be a fixed length mapping, now a variable length mapping between 16-bit code units and unicode code points.
-That UTF-16 is so common a representation in so many languages is unfortunate.
+Originally intended to be a fixed length mapping, UTF-16 now a variable length mapping between 16-bit code units and unicode code points.
+That UTF-16 is such a common representation in so many languages is unfortunate.
 UTF-16 has the disadvantage of taking more space than UTF-8 for the most common characters, with none of the advantages that would have come with being a fixed length encoding.
+So between UTF-8, variable but concise, and UTF-32, fixed but taking up much more space, we have the worst of both worlds.  
 
 ### Byte Order Mark
-A zero width character placed at the beginning of a file or character stream used to designate byte order.
+A sequence of bytes placed at the beginning of a file or character stream used to designate byte order.
+This is skipped over and not considered a character, as it is metadata indicating whether or not bytes should be reversed before being encoded into characters.
 In UTF-16, it is 0xFEFF.
 When consuming bytes, if they are read as 0xFEFF, the stream is big endian.
 If they are read as 0xFFFE, the steam is little endian.
 
-In UTF-8, it is 0xEFBBBF, has no meaning, and should be discarded upon being read.
+In UTF-8, there is an optional byte order mark of 0xEFBBBF
+It has no meaning, and should be discarded upon being read.
+If you don't account for the possibility of a byte order mark existing, this can lead to some confusing behavior in your program.
 
 ### ASCII
-American Standard Code for Information Interchange.  Includes the characters we are most familiar with.
+American Standard Code for Information Interchange.  Includes the characters Americans are most familiar with.
 
 ### ISO-8859-1
-Character encoding with support for languages used in the Americas, Western Europe, Oceania, and much of Africa.  Noteworthy because it is the default encoding of HTTP content.
+Character encoding with support for languages used in the Americas, Western Europe, Oceania, and much of Africa.
+Noteworthy because it is the default encoding of HTTP content.
 
 ### Serif
 A small line attached to the ends of glyphs
