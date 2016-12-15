@@ -1,6 +1,3 @@
-# Character
-I am going to given you an overview of some of the lessor known characteristics of the visual symbol known as the "character"
-
 ## What does a software engineer need to know about characters?
 There is a lot of terminology surrounding characters,
 and the terms are so interrelated it is hard to define them all in a non-circular manner.
@@ -9,24 +6,26 @@ So I am going to try to provide definitions that are unambiguous even though som
 ## Character Terminology 
 
 ### Character
-For technical people, usually refers to either a code unit or code point
-For business people, usually refers to a grapheme or ligature
+For technical people, usually refers to either a code unit or code point.
+For business people, usually refers to a grapheme or ligature.
 
 ### Grapheme
 The smallest meaningful contrastive unit of a writing system.
-Examples are alphabetic letters, chinese characters, numbers, and punctuation marks.
+Contrastive, means they are designed to be distinguished from one another.
+For example, a 'c' is different than an 'e', yet two 'c's are the same even if they have slight differences in their shape.
+Examples are of graphemes are alphabetic letters, chinese characters, numbers, and punctuation marks.
 
 ### Glyph
 The shape of a marking representing a grapheme.
-Different glyphs may represent the same grapheme. 
+Different glyphs may represent the same grapheme.
+For example, there are many different styles an 'a' can be written in that still represent an 'a'.
 
 ### Ligature
-Two or more graphemes joined as a single glyph, such as æ.
+Two or more graphemes joined as a single glyph, such as the ash 'æ'
 
 ### Code Point
 Represents a single character in a code space.
 This is a number that corresponds to a single character.
-When an engineer is talking about hte 
 
 ### Code Space
 A range of numerical values available for encoding characters.
@@ -34,17 +33,17 @@ A range of numerical values available for encoding characters.
 ### Code Unit
 Smallest computer unit with which to build code points.
 
+### Charset
+A mapping between characters and corresponding numerical values in the code space.
+
+### Encoding
+The rules for converting between code units and characters in a charset.
+
 ### Font
 A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
 
 ### Font Family / Typeface
 A range of fonts that share an overall design
-
-### Encoding
-The rules for converting between code units and characters in a charset.
-
-### Charset
-A mapping between characters and corresponding numerical values in the code space.
 
 ### Unicode
 A standard whose charset includes all characters, in an attempt to unify all languages by assigning a code point to each grapheme.
