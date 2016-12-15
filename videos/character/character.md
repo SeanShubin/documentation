@@ -49,7 +49,7 @@ A range of fonts that share an overall design.
 Common font families are Helvetica, Arial, Times New Roman, and Courier.
 
 ### Unicode
-A standard who's goal is to unify all languages by assigning by providing a consistent way to encode text.
+A standard who's goal is to unify all languages by providing a consistent way to encode text.
 
 ### UTF
 Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
