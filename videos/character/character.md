@@ -79,6 +79,8 @@ A small line attached to the ends of glyphs
 ### Sans Serif
 No serif's
 
+[Serif vs. Sans Serif](videos/character/serif.html)
+
 ## Java example
 
     FileReader fileReader = new FileReader("README.md");
