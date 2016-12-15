@@ -59,18 +59,20 @@ Unicode transformation format.  Refers to a set of encodings that support all un
 
 ### UTF-8
 A variable length mapping between 8-bit code units and unicode code points, where each code point may be represented as 1-6 code units.
-Designed to be compatible with ASCII.  
+Designed to be compatible with ASCII.  Currently, no unicode code point requires more than 4 UTF-8 code units.  
 
 ### UTF-16
 Originally intended to be a fixed length mapping, now a variable length mapping between 16-bit code units and unicode code points.
+That UTF-16 is so common a representation in so many languages is unfortunate.
+UTF-16 has the disadvantage of taking more space than UTF-8 for the most common characters, with none of the advantages that would have come with being a fixed length encoding.
 
 ### Byte Order Mark
 A zero width character placed at the beginning of a file or character stream used to designate byte order.
-In utf-16, it is 0xFEFF.
+In UTF-16, it is 0xFEFF.
 When consuming bytes, if they are read as 0xFEFF, the stream is big endian.
 If they are read as FFFE, the steam is little endian.
 
-In utf-8, it is 0xEFBBBF, has no meaning, and should be discarded upon being read.
+In UTF-8, it is 0xEFBBBF, has no meaning, and should be discarded upon being read.
 
 ### ASCII
 American Standard Code for Information Interchange.  Includes the characters we are most familiar with.
@@ -144,7 +146,7 @@ So how do we read the charset attribute without knowing what the charset is?
 | F   | 1111   |
 
 ```text
-utf 8 bytes        (4 bytes) f0 9d 84 9e
+UTF 8 bytes        (4 bytes) f0 9d 84 9e
 unicode code point (4 bytes) 00 01 d1 1e
 ```
 
@@ -162,7 +164,7 @@ unicode code point (4 bytes) 00 01 d1 1e
 | D1  | 11010001 |
 | 1E  | 00011110 |
 
-### Interpreting the utf-8 bytes
+### Interpreting the UTF-8 bytes
 | Byte 1 | Byte 2 | Byte 3 | Byte 4 | Byte 5 | Byte 6 | Significant Bits |
 |--------|--------|--------|--------|--------|--------|------------------|
 |0xxxxxxx|        |        |        |        |        | 7                |
