@@ -1,9 +1,12 @@
-## What does a software engineer need to know about characters?
+# What does a software engineer need to know about characters?
+
+## Example of why characters are more confusing than they seem
+Sample using the word [fiancé](fiancé.html)
+
+## Character Terminology 
 There is a lot of terminology surrounding characters,
 and the terms are so interrelated it is hard to define them all in a non-circular manner.
 So I am going to try to provide definitions that are unambiguous even though some are circular. 
-
-## Character Terminology 
 
 ### Character
 For technical people, usually refers to either a code unit or code point.
