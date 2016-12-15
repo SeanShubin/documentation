@@ -58,7 +58,7 @@ Emoji support was added as of unicode 6.0.
 Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
 
 ### UTF-8
-A variable length mapping from 8-bit code units to code points, where each code point may be represented as 1-6 code units.
+A variable length mapping between 8-bit code units and unicode code points, where each code point may be represented as 1-6 code units.
 Designed to be compatible with ASCII.  
 
 ### UTF-16
