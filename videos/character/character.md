@@ -70,7 +70,7 @@ UTF-16 has the disadvantage of taking more space than UTF-8 for the most common 
 A zero width character placed at the beginning of a file or character stream used to designate byte order.
 In UTF-16, it is 0xFEFF.
 When consuming bytes, if they are read as 0xFEFF, the stream is big endian.
-If they are read as FFFE, the steam is little endian.
+If they are read as 0xFFFE, the steam is little endian.
 
 In UTF-8, it is 0xEFBBBF, has no meaning, and should be discarded upon being read.
 
@@ -107,6 +107,7 @@ For html documents, specify the charset in a meta element, like so
     <BODY>
 
 So how do we read the charset attribute without knowing what the charset is? 
+From the [html 5 specification](https://www.w3.org/TR/html5/)
 > 4.2.5.5 Specifying the document's character encoding
 > 
 > A character encoding declaration is a mechanism by which the character encoding used to store or transmit a document is specified.
@@ -116,6 +117,12 @@ So how do we read the charset attribute without knowing what the charset is?
 > The character encoding name given must be an ASCII case-insensitive match for one of the labels of the character encoding used to serialize the file. [ENCODING]
 > The character encoding declaration must be serialized without the use of character references or character escapes of any kind.
 > The element containing the character encoding declaration must be serialized completely within the first 1024 bytes of the document.
+
+from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+> * Authors are encouraged to use UTF-8.
+> * Authors should not use ASCII-incompatible encodings (i.e. those that don't map the 8-bit code points 0x20 to 0x7E to the Unicode 0x0020 to 0x007E code points) as these represent a security risk: browsers not supporting them may interpret benign content as HTML Elements. This is the case of at least the following charsets: JIS_C6226-1983, JIS_X0212-1990, HZ-GB-2312, JOHAB, the ISO-2022 family, and the EBCDIC family.
+> * Authors must not use CESU-8, UTF-7, BOCU-1 and SCSU, also falling in that category and not intended to be used on the web. Cross-scripting attacks with some of these encodings have been documented.
+> * Authors should not use UTF-32 because not all HTML5 encoding algorithms can distinguish it from UTF-16.
 
 ##G Clef Sample
 
