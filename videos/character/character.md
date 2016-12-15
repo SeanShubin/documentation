@@ -13,7 +13,7 @@ For business people, usually refers to a grapheme or ligature.
 The smallest meaningful contrastive unit of a writing system.
 Contrastive, means they are designed to be distinguished from one another.
 For example, a 'c' is different than an 'e', yet two 'c's are the same even if they have slight differences in their shape.
-Examples are of graphemes are alphabetic letters, chinese characters, numbers, and punctuation marks.
+Examples of graphemes are alphabetic letters, chinese characters, numbers, and punctuation marks.
 
 ### Glyph
 The shape of a marking representing a grapheme.
@@ -28,10 +28,11 @@ Represents a single character in a code space.
 This is a number that corresponds to a single character.
 
 ### Code Space
-A range of numerical values available for encoding characters.
+A range of numerical values that have corresponding characters.
 
 ### Code Unit
 Smallest computer unit with which to build code points.
+In most programming languages, when you get the length of a string, you are counting the number of code units.
 
 ### Charset
 A mapping between characters and corresponding numerical values in the code space.
@@ -43,10 +44,11 @@ The rules for converting between code units and characters in a charset.
 A set of glyphs with a particular set of parameters, such as weight, slope, width, serif, monospaced, etc.
 
 ### Font Family / Typeface
-A range of fonts that share an overall design
+A range of fonts that share an overall design.
+Common font families are Helvetica, Arial, Times New Roman, and Courier.
 
 ### Unicode
-A standard whose charset includes all characters, in an attempt to unify all languages by assigning a code point to each grapheme.
+A standard who's goal is to unify all languages by assigning by providing a consistent way to encode text.
 
 ### UTF
 Unicode transformation format.  Refers to a set of encodings that support all unicode code points.
