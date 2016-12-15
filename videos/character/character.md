@@ -1,7 +1,7 @@
 # What does a software engineer need to know about characters?
 
 ## Example of why characters are more confusing than they seem
-Sample using the word [fiancé](fiancé.html)
+Sample using the word [fiancé](fiance.html)
 
 ## Character Terminology 
 There is a lot of terminology surrounding characters,
