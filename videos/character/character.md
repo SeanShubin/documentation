@@ -146,28 +146,28 @@ from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 ### Sample application
 [source](core/src/main/scala/com/seanshubin/documentation/core/ClefSample.scala)
 
-| hex | binary |
-|-----|--------|
-| 0   | 0000   |
-| 1   | 0001   |
-| 2   | 0010   |
-| 3   | 0011   |
-| 4   | 0100   |
-| 5   | 0101   |
-| 6   | 0110   |
-| 7   | 0111   |
-| 8   | 1000   |
-| 9   | 1001   |
-| A   | 1010   |
-| B   | 1011   |
-| C   | 1100   |
-| D   | 1101   |
-| E   | 1110   |
-| F   | 1111   |
+| decimal | hex | binary |
+|---------|-----|--------|
+|  0      | 0   | 0000   |
+|  1      | 1   | 0001   |
+|  2      | 2   | 0010   |
+|  3      | 3   | 0011   |
+|  4      | 4   | 0100   |
+|  5      | 5   | 0101   |
+|  6      | 6   | 0110   |
+|  7      | 7   | 0111   |
+|  8      | 8   | 1000   |
+|  9      | 9   | 1001   |
+| 10      | A   | 1010   |
+| 11      | B   | 1011   |
+| 12      | C   | 1100   |
+| 13      | D   | 1101   |
+| 14      | E   | 1110   |
+| 15      | F   | 1111   |
 
 ```text
-UTF 8 bytes        (4 bytes) f0 9d 84 9e
-unicode code point (4 bytes) 00 01 d1 1e
+UTF 8 bytes        (4 bytes) F0 9D 84 9E
+unicode code point (4 bytes) 00 01 D1 1E
 ```
 
 | hex | binary   |
@@ -198,6 +198,7 @@ unicode code point (4 bytes) 00 01 d1 1e
 utf8-hex       F   0    9   D    8   4    9   E
 utf8        11110000 10011101 10000100 10011110
 significant      000   011101   000100   011110
+21 bit      000011101000100011110
             00001 11010001 00011110
 code point      1    D   1    1   E
 ```
