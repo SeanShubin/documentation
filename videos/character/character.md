@@ -123,7 +123,7 @@ If you do some digging into the Java library source code, you will find the code
         new InputStreamReader(new FileInputStream("README.md"), Charset.defaultCharset());
 
 Now the previously hidden input to the function is revealed.
-In general, you should be specific about what encoding you are using, so instead of going with the default charset, do something like this.
+In general, you should be specific about what encoding you are using, so instead of going with the default encoding, do something like this.
 
     InputStreamReader inputStreamReader = 
         new InputStreamReader(new FileInputStream("README.md"), StandardCharsets.UTF_8);
@@ -132,11 +132,11 @@ This example illustrates two mistakes in the Java libraries.
 One mistake is that FileReader does not take an encoding, even though it absolutely needs one to convert bytes to characters.
 This constructor should not even exist, and instead there should be a constructor that takes an encoding.
 Another mistake is the use of the word charset where encoding is really what is meant.
-For example UTF-8 and UTF-16 have the same charset but different encodings.
+For example, UTF-8 and UTF-16 have the same charset but different encodings.
 
 
 ## HTML 5 
-For html documents the charset is specified in a meta element, like so
+For html documents the encoding is specified in the CHARSET meta element, like so
 
     <!DOCTYPE HTML>
     <HTML>
