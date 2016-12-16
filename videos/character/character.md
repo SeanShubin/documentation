@@ -117,7 +117,7 @@ So how exactly do we know what encoding we are dealing with?
 You don't see it specified here, so something else must be happening.
 What is happening is that the file reader is choosing a default encoding based on the platform on which Java is currently running.
 This necessarily means this code is platform dependent, it is not guaranteed to do the same thing if run elsewhere.
-The equivalent code is:
+If you do some digging into the Java library source code, you will find the code is doing something similar to this:
 
     InputStreamReader inputStreamReader = 
         new InputStreamReader(new FileInputStream("README.md"), Charset.defaultCharset());
