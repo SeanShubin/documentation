@@ -168,8 +168,7 @@ from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 
 What this distills down to is that in order to ensure you can reliably interpret the characters in an HTML document, you need to do two things:
 - Make sure the encoding is specified within the first 1024 bytes of the html document.
-- Make sure all of the bytes encountered before the CHARSET meta tag are compatible with ASCII
-For the UTF-8 encoding this is a matter of making sure you only use bytes ranging from 0 to 127
+- Make sure all of the bytes encountered before the CHARSET meta tag are compatible with ASCII.
 
 ##G Clef Sample
 
