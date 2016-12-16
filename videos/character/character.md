@@ -143,8 +143,10 @@ from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 
 [g clef](http://www.fileformat.info/info/unicode/char/1d11e/index.htm)
 
-### Sample application
-[source](core/src/main/scala/com/seanshubin/documentation/core/ClefSample.scala)
+```text
+UTF 8 bytes        (4 bytes) F0 9D 84 9E
+unicode code point (4 bytes) 00 01 D1 1E
+```
 
 | decimal | hex | binary |
 |---------|-----|--------|
@@ -164,11 +166,6 @@ from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 | 13      | D   | 1101   |
 | 14      | E   | 1110   |
 | 15      | F   | 1111   |
-
-```text
-UTF 8 bytes        (4 bytes) F0 9D 84 9E
-unicode code point (4 bytes) 00 01 D1 1E
-```
 
 | hex | binary   |
 |-----|----------|
