@@ -1,7 +1,7 @@
 # What does a software engineer need to know about characters?
 
 ## Example of why characters are more confusing than they seem
-Sample using the word [fiancé](fiance.html)
+Sample using the word [fiancé](http://seanshubin.com/character/fiance.html)
 
 ## Character Terminology 
 There is a lot of terminology surrounding characters,
@@ -100,7 +100,7 @@ A small line attached to the ends of glyphs
 ### Sans Serif
 No serif's
 
-[Serif vs. Sans Serif](serif.html)
+[Serif vs. Sans Serif](http://seanshubin.com/character/serif.html)
 
 ## Java example
 
