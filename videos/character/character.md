@@ -39,7 +39,8 @@ Smallest computer unit with which to build code points.
 In most programming languages, when you get the length of a string, you are counting the number of code units.
 
 ### Charset
-A set of characters that can be mapped into a code space
+A set of characters that can be mapped into a code space.
+Unfortunately, in some languages, the word charset is used when what is really meant is encoding.
 
 ### Encoding
 The rules for converting between code units and characters in a charset.
@@ -103,14 +104,39 @@ No serif's
 
 ## Java example
 
+How does this affect the way I code?
+Consider the following Java code:
+
     FileReader fileReader = new FileReader("README.md");
+
+In Java, the "*Reader" classes read characters, not bytes.
+It is not possible to convert from bytes to characters, or characters to bytes without knowing the encoding.
+If you remember nothing else about characters in software engineering, remember this.
+It is not possible to convert from bytes to characters, or characters to bytes without knowing the encoding.
+So how exactly do we know what encoding we are dealing with?
+You don't see it specified here, so something else must be happening.
+What is happening is that the file reader is choosing a default encoding based on the platform java is currently running.
+This necessarily means this code is platform dependent, it is not guaranteed to do the same thing if run elsewhere.
+The equivalent code is:
 
     InputStreamReader inputStreamReader = 
         new InputStreamReader(new FileInputStream("README.md"), Charset.defaultCharset());
 
+Now the previously hidden input to the function is revealed.
+In general, you should be specific about what encoding you are using, so instead of going with the default charset, do something like this.
+
+    InputStreamReader inputStreamReader = 
+        new InputStreamReader(new FileInputStream("README.md"), StandardCharsets.UTF_8);
+
+This example illustrates two mistakes in the Java libraries.
+One mistake is that FileReader does not take an encoding, even though it absolutely needs one to convert bytes to characters.
+This constructor should not even exist, and instead there should be a constructor that takes an encoding.
+Another mistake is the use of the word charset where encoding is really what is meant.
+For example UTF-8 and UTF-16 have the same charset but different encodings.
+
 
 ## HTML 5 
-For html documents, specify the charset in a meta element, like so
+For html documents the charset is specified in a meta element, like so
 
     <!DOCTYPE HTML>
     <HTML>
@@ -119,7 +145,10 @@ For html documents, specify the charset in a meta element, like so
      </HEAD>
     <BODY>
 
-So how do we read the charset attribute without knowing what the charset is? 
+Given that it is bytes, not characters, that are transmitted over the internet protocol, can you see a problem with this?
+To get the encoding, we need to convert bytes to characters.
+To convert bytes to characters, we need the encoding.
+
 From the [html 5 specification](https://www.w3.org/TR/html5/)
 > 4.2.5.5 Specifying the document's character encoding
 > 
@@ -136,6 +165,11 @@ from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 > * Authors should not use ASCII-incompatible encodings (i.e. those that don't map the 8-bit code points 0x20 to 0x7E to the Unicode 0x0020 to 0x007E code points) as these represent a security risk: browsers not supporting them may interpret benign content as HTML Elements. This is the case of at least the following charsets: JIS_C6226-1983, JIS_X0212-1990, HZ-GB-2312, JOHAB, the ISO-2022 family, and the EBCDIC family.
 > * Authors must not use CESU-8, UTF-7, BOCU-1 and SCSU, also falling in that category and not intended to be used on the web. Cross-scripting attacks with some of these encodings have been documented.
 > * Authors should not use UTF-32 because not all HTML5 encoding algorithms can distinguish it from UTF-16.
+
+What this distills down to is that in order to ensure you can reliably interpret the characters in an HTML document, you need to do two things:
+- Make sure the encoding is specified within the first 1024 bytes of the html document.
+- Make sure all of the bytes encountered before the CHARSET meta tag are compatible with ASCII
+For the UTF-8 encoding this is a matter of making sure you only use bytes ranging from 0 to 127
 
 ##G Clef Sample
 
