@@ -1,0 +1,60 @@
+# Critical Thinking
+
+Critical
+- Balance between delusion and denial
+Thinking
+- Balance between ignorance and dogma
+
+Reliable ways of knowing things
+- Specification
+
+Unreliable ways of knowing things
+
+
+
+Delusion
+- Type 1 Error
+- incorrect rejection of a true null hypothesis
+
+Denial
+- Type 2 Error
+- failure to reject a false null hypothesis
+
+philosophical skepticism (not methodological skepticism)
+- assumption that a claim is unknowable
+
+
+René Descartes - Methodological skepticism 
+A systematic but tentative doubt as a prelude to genuine knowledge. 
+
+ 
+Dictionary
+- Prescriptive
+- Descriptive
+- Lexicographer
+
+Sokal affair 
+
+
+
+wikipedia - "we do not represent or guarantee the truthfulness, accuracy, or reliability of any submitted community content"
+google
+
+
+objective reality
+observation as arbitrator
+
+
+René Descartes Quotes
+- I am indeed amazed when I consider how weak my mind is and how prone to error. 
+- When it is not in our power to follow what is true, we ought to follow what is most probable. 
+- It is not enough to have a good mind; the main thing is to use it well. 
+- The reading of all good books is like a conversation with the finest minds of past centuries.
+
+
+3rd century BC by Aristarchus of Samos
+Rejected because it contradicted Aristotle
+
+
+
+Leonardo da Vinci - "If you find from your own experience that something is a fact and it contradicts what some authority has written down, then you must abandon the authority and base your reasoning on your own findings."
