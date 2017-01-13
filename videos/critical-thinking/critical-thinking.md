@@ -1,5 +1,36 @@
 # Critical Thinking
 
+Common mistakes
+- meteor adiabatic compression
+- sun is white
+- microwave dielectric heating
+- fan death. According to the Korean government, "In some cases, a fan turned on too long can cause death from suffocation, hypothermia, or fire from overheating
+- Eating less than an hour before swimming does not increase the risk of experiencing muscle cramps or drowning.
+- Human blood in veins is not actually blue.
+- Don't freeze in space
+- 5 senses
+- Tongue map
+- primary colors
+- People do not use only ten percent of their brains.
+- Glass does not flow at room temperature as a high-viscosity liquid
+- Water does not consistently drain in a counter-clockwise vortex in basins in the Northern Hemisphere and clockwise in the Southern due to the Coriolis effect. 
+
+
+- self limiting condition
+
+
+Philosophical Roots
+
+names
+- scientific skepticism
+- rational skepticism
+- methodological skepticism
+
+people
+- René Descartes
+
+
+
 Critical
 - Balance between delusion and denial
 Thinking
