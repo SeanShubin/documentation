@@ -1,0 +1,4 @@
+- seanshubin.com
+- refactor for maintainability
+- unit testing web dispatch
+- different types of loops
