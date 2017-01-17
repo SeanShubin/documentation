@@ -9,7 +9,7 @@ discipline to apply skill honestly
 
 curiosity, questioning, skepticism
 skill, knowledge
-discipline, humility
+discipline, humility, active, open
 
 Paul-Elder framework, critical thinking is the:
 Analysis of thinking by focusing on the parts or structures of thinking ("the Elements of Thought")
