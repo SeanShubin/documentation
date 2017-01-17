@@ -1,5 +1,6 @@
 # Critical Thinking
 
+Purpose is to be less wrong about the portion of reality that is observer independent
 
 ## Definitions
 
@@ -8,15 +9,16 @@ skill in applying that knowledge
 discipline to apply skill honestly
 
 curiosity, questioning, skepticism
-skill, knowledge
+skill, knowledge, informed
 discipline, humility, active, open
 
 Paul-Elder framework, critical thinking is the:
-Analysis of thinking by focusing on the parts or structures of thinking ("the Elements of Thought")
-Evaluation of thinking by focusing on the quality ("the Universal Intellectual Standards")
-Improvement of thinking by using what you have learned ("the Intellectual Traits")
+- Analysis of thinking by focusing on the parts or structures of thinking ("the Elements of Thought")
+- Evaluation of thinking by focusing on the quality ("the Universal Intellectual Standards")
+- Improvement of thinking by using what you have learned ("the Intellectual Traits")
 
-http://www.criticalreading.com/critical_thinking.htm
+- http://www.criticalreading.com/critical_thinking.htm
+- http://isites.harvard.edu/fs/docs/icb.topic265890.files/Critical_Thinking_File/06_CT_Extended_Definition.pdf
 
     |               denial
     | ignorant  ->  reasoned  ->  correct
