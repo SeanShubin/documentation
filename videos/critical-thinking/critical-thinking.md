@@ -16,11 +16,28 @@ Analysis of thinking by focusing on the parts or structures of thinking ("the El
 Evaluation of thinking by focusing on the quality ("the Universal Intellectual Standards")
 Improvement of thinking by using what you have learned ("the Intellectual Traits")
 
+http://www.criticalreading.com/critical_thinking.htm
+
+    |               denial
+    | ignorant  ->  reasoned  ->  correct
+    |               delusional
 
 
-    |                denial
-    | ignorance  ->  reliable  ->  truth
-    |                delusion
+unknown -> known
+uncertain -> certain
+unsubstantiated -> evidence
+
+Ignorance
+- Lack of curiosity
+
+Denial
+- Claim something is unknown in spite of evidence
+
+Delusional
+- Claim something is known without evidence
+
+
+
 
 Reliable ways of knowing things
 Axiomatic
