@@ -1,5 +1,41 @@
 # Critical Thinking
 
+
+## Definitions
+
+knowledge in methods of inquiry
+skill in applying that knowledge
+discipline to apply skill honestly
+
+curiosity, questioning, skepticism
+skill, knowledge
+discipline, humility
+
+Paul-Elder framework, critical thinking is the:
+Analysis of thinking by focusing on the parts or structures of thinking ("the Elements of Thought")
+Evaluation of thinking by focusing on the quality ("the Universal Intellectual Standards")
+Improvement of thinking by using what you have learned ("the Intellectual Traits")
+
+
+
+    |                denial
+    | ignorance  ->  reliable  ->  truth
+    |                delusion
+
+Reliable ways of knowing things
+Axiomatic
+By-Definition
+Specification
+Coined Phrase
+Propositional calculus
+First-order logic
+Rule of inference
+
+
+Whatever is, is
+Nothing can both be and not be
+Everything must either be or not be
+
 Common mistakes
 - meteor adiabatic compression
 - sun is white
