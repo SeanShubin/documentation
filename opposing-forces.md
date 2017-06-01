@@ -22,7 +22,7 @@
 
 ## Off the shelf vs. Write your own
 - Write your own: Exactly match need
-- Off the shelf: 
+- Off the shelf: Get it working faster
 
 ## Consistency vs. Availability (when you have multiple Partitions)
 - Consistency: The data is up-to-date
