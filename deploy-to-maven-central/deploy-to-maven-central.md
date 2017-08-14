@@ -1,3 +1,8 @@
+Tp fix the problem where GnuPG 2.1 by default ignores passphrases passed in via environment variables or stdin, and is trying to show a pinentry prompt.
+Add this to ~/.gnupg/gpg.conf:
+
+    use-agent 
+    pinentry-mode loopback
 
 in maven project to deploy
 
