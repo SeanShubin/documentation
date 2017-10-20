@@ -36,4 +36,3 @@ object GraphicsPrototyping extends App {
   println(s"height = $height, width = $width")
   println(consolas.createGlyphVector(fontRenderContext, "hello").getOutline.getBounds)
 }
-
