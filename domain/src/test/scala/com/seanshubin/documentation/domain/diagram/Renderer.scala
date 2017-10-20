@@ -17,7 +17,7 @@ class Renderer {
         |</body>
         |</html>
         |""".stripMargin
-    val body = elements.map(_.renderSvg).mkString("\n")
+    val body = elements.flatMap(_.renderSvg).mkString("\n")
     header ++ body ++ footer
   }
 }
