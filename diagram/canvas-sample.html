@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Critical Thinking</title>
+</head>
+<body>
+<script type="text/javascript">
+    var canvas = document.createElement("canvas");
+    canvas.width = 1000;
+    canvas.height = 1000;
+    var context = canvas.getContext("2d");
+    context.fillStyle = 'rgb(255,0,0)';
+    context.fillRect(10, 10, 55, 50);
+    context.fillStyle = 'rgb(0,0,0)';
+    context.font = "20px 'Consolas'";
+    context.fillText("Hello, world", 100, 100);
+    document.body.appendChild(canvas);
+</script>
+</body>
+</html>
