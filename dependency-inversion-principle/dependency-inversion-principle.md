@@ -1,7 +1,7 @@
 #Dependency Inversion Principle
 
 This information can also be found in the book Agile Software Development,
-Principles, Patterns, and Practices by Robert C. Martin
+Principles, Patterns, and Practices by Robert C. Martin.
 He also has a very useful heuristic that can help you learn the Dependency
 Inversion Principle.
 
