@@ -7,7 +7,6 @@ Inversion Principle.
 
 The Dependency Inversion Principle is also known as
 - Inversion of Control
-- Dependency Injection
 - The Hollywood Principle (don’t call us, we’ll call you)
 
 The problem is that as more features are added to a program, the harder it
@@ -58,8 +57,8 @@ understand ClassA?  You can see that ClassA only knows about 3 interfaces,
 so the complexity involved is 4.  Also notice that no matter how many extra
 classes are added on because of new features, the overall complexity of any
 given feature levels out rather than growing exponentially.  Although the
-number of classes increased from 13 to 25, the actual complexity reduced to
-4.  For testing, you go from having to mock 12 objects, to only having to
+number of classes increased from 13 to 25, the actual complexity reduced
+to 4.  For testing, you go from having to mock 12 objects, to only having to
 mock 3.
 
 ## Advantages
@@ -68,3 +67,12 @@ mock 3.
 - By depending on abstractions instead of implementations, it is easy for tests to replace dependencies with fakes/stubs/mocks, so each test only has to worry about its subject.
 - Partitions and isolates parts of the code from each-other
     - When maintaining the code, it is easier to focus on only the parts relevant to you, as details can be hidden behind the dependency contract.
+
+## Notes from the book
+- What is inverted?
+    - The idea that high level modules depend on low level modules
+    - Low level modules affect the design of high level modules
+- Dependency is transitive
+- Inversion of ownership
+- It is ok to depend on concrete modules as long as they are not volatile
+    - For example, String
