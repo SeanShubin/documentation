@@ -5,4 +5,5 @@ The Effect of Perceived Advantage and Disadvantage on Performance: The Role of E
 Objective Reality
 
 feeling like you understand without actually knowing
+echo chambers
 
