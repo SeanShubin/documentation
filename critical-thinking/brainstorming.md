@@ -8,5 +8,4 @@ less wrong
 feeling like you understand without actually knowing
 echo chambers
 google customizes results
-
-
+need for pushback on ideas
