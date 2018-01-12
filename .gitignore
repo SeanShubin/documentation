@@ -9,6 +9,3 @@ local-config
 *~
 *#
 .#*
-gui/src/main/resources/serve-from-classpath/lib/
-.DS_Store
-
