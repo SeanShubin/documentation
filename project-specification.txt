@@ -20,6 +20,10 @@
       artifact scalatest_2.12
       scope test
     }
+    junit {
+      group junit
+      artifact junit
+    }
   }
   global [scala-library scala-test]
   modules {
