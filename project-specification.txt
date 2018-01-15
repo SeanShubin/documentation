@@ -25,8 +25,9 @@
       artifact junit
     }
   }
-  global [scala-library scala-test]
+  global [scala-library scala-test junit]
   modules {
     domain  []
   }
+  javaVersion 1.8
 }
