@@ -76,14 +76,15 @@ The important thing is to know difference between ideas you have claimed for you
 - considerate of feelings
 - loyalty to a group
 - being intelligent
-- the goal is to not be fooled, and the easiest person to fool is yourself
 - wikipedia
 - dictionary
+- internet search
 
 ## Conclusion
 - Critical thinking is hard work, don't trust easily obtained certainty
 - Listen to the ideas of others, but don't believe them until you have evaluated them on your own
 - If you don't understand alternatives to your ideas and the reasons to choose your idea instead, then you don't understand your idea. 
+- the goal is to not be fooled, and the easiest person to fool is yourself
 - Maintain certainty proportional to evidence
 
 
