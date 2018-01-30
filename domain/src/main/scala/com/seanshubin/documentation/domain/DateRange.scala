@@ -13,19 +13,19 @@ sealed abstract case class DateRange(name: String) {
 
 object DateRange {
   private val valuesBuffer = new ArrayBuffer[DateRange]
-  lazy val values = valuesBuffer.toSeq
-  val LastSevenDays = new DateRange("Last 7 Days") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) =
+  lazy val values: Seq[DateRange] = valuesBuffer
+  val LastSevenDays: DateRange = new DateRange("Last 7 Days") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) =
       (ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS).minusDays(7),
         ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS).minusDays(0))
   }
-  val LastThirtyDays = new DateRange("Last 30 Days") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) =
+  val LastThirtyDays: DateRange = new DateRange("Last 30 Days") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) =
       (ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS).minusDays(30),
         ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS).minusDays(0))
   }
-  val LastQuarter = new DateRange("Last Quarter") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) = {
+  val LastQuarter: DateRange = new DateRange("Last Quarter") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) = {
       val today = ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS)
       val month = today.getMonthValue
       val quarter = (month + 2) / 3
@@ -35,8 +35,8 @@ object DateRange {
       (beginQuarter, endQuarter)
     }
   }
-  val LastYear = new DateRange("Last Year") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) = {
+  val LastYear: DateRange = new DateRange("Last Year") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) = {
       val today = ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS)
       val year = today.getYear
       val lastYear = today.withYear(year - 1).withDayOfYear(1)
@@ -44,15 +44,15 @@ object DateRange {
       (lastYear, thisYear)
     }
   }
-  val YearToDate = new DateRange("Year to Date") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) = {
+  val YearToDate: DateRange = new DateRange("Year to Date") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) = {
       val today = ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS)
       val beginningOfYear = today.withDayOfYear(1)
       (beginningOfYear, today)
     }
   }
-  val QuarterToDate = new DateRange("Quarter to Date") {
-    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId) = {
+  val QuarterToDate: DateRange = new DateRange("Quarter to Date") {
+    def rangeBeginInclusiveToEndExclusive(now: Instant, zoneId: ZoneId): (ZonedDateTime, ZonedDateTime) = {
       val today = ZonedDateTime.ofInstant(now, zoneId).truncatedTo(ChronoUnit.DAYS)
       val month = today.getMonthValue
       val quarter = (month + 2) / 3
