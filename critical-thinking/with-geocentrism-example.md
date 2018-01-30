@@ -48,6 +48,8 @@ If you don't do the work, what you have is not knowledge, what you have instead 
 Critical thinking is about having your own ideas.
 
 Don't take this to mean you have to run down every single idea.
+Before this presentation, I had just accepted that the earth went around the sun.
+This presentation happened to be the first occation I had reason to evaluate the claim critically.
 The important thing is to know difference between ideas you have claimed for yourself, and ideas someone else has put in your head.  
 
 ## NOTE: Everything above this line is done, below this line is just the outline for my work in progress
