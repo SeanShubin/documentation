@@ -50,7 +50,7 @@ Critical thinking is about having your own ideas.
 Don't take this to mean you have to run down every single idea.
 The important thing is to know difference between ideas you have claimed for yourself, and ideas someone else has put in your head.  
 
-
+## NOTE: Everything above this line is done, below this line is just the outline for my work in progress
 
 ## What critical thinking is
 - Disciplined Curiosity
