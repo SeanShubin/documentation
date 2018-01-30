@@ -1,11 +1,14 @@
-Dunning–Kruger effect
-The Backfire Effect
-The Effect of Perceived Advantage and Disadvantage on Performance: The Role of External Efficacy
+limitations of the mind
+- Dunning–Kruger effect
+- The Backfire Effect
+- The Effect of Perceived Advantage and Disadvantage on Performance: The Role of External Efficacy
 
-Objective Reality
-less wrong
+the goal
+- Objective Reality
+- less wrong
 
-feeling like you understand without actually knowing
-echo chambers
-google customizes results
-need for pushback on ideas
+obstacles
+- feeling like you understand without actually knowing
+- echo chambers
+- social media customizes results
+- need for pushback on ideas
