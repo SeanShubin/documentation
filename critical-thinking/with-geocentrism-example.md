@@ -1,5 +1,8 @@
 # Critical Thinking
 
+While critical thinking is useful in all aspects of your life, there is no escaping the explicit need for it in software engineering.
+I will talk about what critical thinking is for, how to tell if you are thinking critically, and how easy it is to fool yourself into thinking you are thinking critically when you are not. 
+
 ## What critical thinking is for
 - Reliably gaining knowledge about objective reality
 - Justified True Belief
