@@ -54,8 +54,6 @@ Don't take this to mean you have to critically evaluate every single idea.
 This presentation happened to be the first occasion I had reason to evaluate the heliocentric claim critically.
 The important thing is to know difference between ideas you have claimed for yourself, and ideas someone else has put in your head, that you have not yet claimed as knowledge or debunked as wrong.  
 
-## NOTE: Everything above this line is done, below this line is just the outline for my work in progress
-
 ## What critical thinking is
 - Disciplined Curiosity
 - don't accept ignorance, push for discovery
