@@ -62,11 +62,6 @@ The important thing is to know difference between ideas you have claimed for you
     - great at discovering the rules of objective reality
     - vulnerable to intentional deception
     - sometimes a magician is more qualified to evaluate a claim than a scientist
-- cognitive bias
-    - all of us have them
-    - the easiest person to fool is yourself
-    - seek out opposing ideas
-- Very difficult to do alone, note the heliocentric model was shown to be true because of opposing biases.
 
 ## What critical thinking is not
 
@@ -81,11 +76,15 @@ The important thing is to know difference between ideas you have claimed for you
 - [echo chambers](echo-chambers.jpg)
 - [dunning kruger effect](dunning-kruger-effect.jpg)
 
-## Examples
-- echo chambers
-- fallacy of division / fallacy of composition
-- dunning kruger effect
-
+## Cognitive Bias
+- all of us have them
+    - confirmation bias
+    - backfire effect
+    - language ambiguity
+- the easiest person to fool is yourself
+- very difficult to think critically alone, note the heliocentric model was shown to be true because of opposing biases
+- seek out alternative, even opposing ideas
+- to make progress, you need the courage to explore ideas that could turn out to be wrong
 
 ## Conclusion
 - Your mind has amazingly wonderful capabilities along with terrifying vulnerabilities
