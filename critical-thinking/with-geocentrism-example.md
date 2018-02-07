@@ -80,7 +80,6 @@ The important thing is to know difference between ideas you have claimed for you
 - wikipedia
 - dictionary
 - internet search
-- echo chambers
 [echo chambers](echo-chambers.jpg)
 
 ## Examples
