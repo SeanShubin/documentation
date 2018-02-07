@@ -29,22 +29,22 @@ It is not knowledge unless your belief is justified.
 ### Example, explained
 - Claudius Ptolemy (100 - 170)
     - Created a model of nested spheres with epicycles, that could predict the positions of planets
-- Nicolaus Copernicus (February 19 1473 - May 24 1543)
+- Nicolaus Copernicus (February 19, 1473 - May 24, 1543)
     - Created a model where the earth went around the sun, that could predict the positions of planets just as well without epicycles
-- Tycho Brahe (December 14 1546 - October 24 1601)
+- Tycho Brahe (December 14, 1546 - October 24, 1601)
     - Comprehensively and precisely recorded the positions of stars and planets
 - Johannes Kepler (December 27, 1571 - November 15, 1630)
     - Developed laws of planetary motion
         - The orbit of a planet is an ellipse with the Sun at one of the two foci.
         - A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.[1]
         - The square of the orbital period of a planet is proportional to the cube of the semi-major axis of its orbit.
-- Isaac Newton (January 4 1643 - March 31 1727)
+- Isaac Newton (January 4, 1643 - March 31, 1727)
     - Law of universal gravitation
-- James Bradley (March 1693 - July 13 1762)
+- James Bradley (March 1693 - July 13, 1762)
     - Tried to measure parallax, instead discovered aberration of light
-- Friedrich Bessel (July 22 1784 - March 17 1846)    
+- Friedrich Bessel (July 22, 1784 - March 17, 1846)    
     - Successfully measured stellar parallax in 1838 for the star 61 Cygni using a heliometer
-- Albert Einstein (March 14 1879 - April 18 1955)
+- Albert Einstein (March 14, 1879 - April 18, 1955)
     - Observations of stellar aberration influenced his theory of special relativity
 
 If you don't do the work, what you have is not knowledge, what you have instead is someone else's idea.
