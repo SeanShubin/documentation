@@ -74,13 +74,14 @@ The important thing is to know difference between ideas you have claimed for you
 
 - saying the people with opposing ideas are bad
 - silencing ideas
-- [echo chambers](echo-chambers.jpg)
 - considerate of feelings
 - loyalty to a group
 - being intelligent
 - wikipedia
 - dictionary
 - internet search
+- echo chambers
+[echo chambers](echo-chambers.jpg)
 
 ## Examples
 - echo chambers
