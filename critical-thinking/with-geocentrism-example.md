@@ -19,7 +19,7 @@ Which is it?
 How do you know that?
 
 Did anyone mention parallax?
-- Close, but we knew the answer long before we could measure parallax with sufficient accuracy
+- Close, but initial measurements of parallax matched a heliocentric model because they did not account for how far away the stars were
 
 Did anyone mention aberration of light?
 - If you can explain what that means and how it can be used to test if we are in a geocentric or heliocentric system, then congratulations, you have knowledge.
@@ -51,8 +51,7 @@ If you don't do the work, what you have is not knowledge, what you have instead 
 Critical thinking is about having your own ideas.
 
 Don't take this to mean you have to critically evaluate every single idea.
-Before this presentation, I had just accepted that the earth went around the sun.
-This presentation happened to be the first occasion I had reason to evaluate the claim critically.
+This presentation happened to be the first occasion I had reason to evaluate the heliocentric claim critically.
 The important thing is to know difference between ideas you have claimed for yourself, and ideas someone else has put in your head, that you have not yet claimed as knowledge or debunked as wrong.  
 
 ## NOTE: Everything above this line is done, below this line is just the outline for my work in progress
@@ -61,21 +60,21 @@ The important thing is to know difference between ideas you have claimed for you
 - Disciplined Curiosity
 - don't accept ignorance, push for discovery
 - don't accept ideas easily, do the work to verify them
-- methodological skepticism, not philosophical skepticism
-- logical positivism
 - methodological naturalism
     - great at discovering the rules of objective reality
     - vulnerable to intentional deception
+    - sometimes a magician is more qualified to evaluate a claim than a scientist
 - cognitive bias
     - all of us have them
     - the easiest person to fool is yourself
     - seek out opposing ideas
+- Very difficult to do alone, note the heliocentric model was shown to be true because of opposing biases.
 
 ## What critical thinking is not
 
 - saying the people with opposing ideas are bad
 - silencing ideas
-- echo chambers
+- [echo chambers](echo-chambers.jpg)
 - considerate of feelings
 - loyalty to a group
 - being intelligent
