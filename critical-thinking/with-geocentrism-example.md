@@ -70,7 +70,7 @@ The important thing is to know difference between ideas you have claimed for you
 
 ## What critical thinking is not
 
-- saying the people with opposing ideas are bad
+- saying the people with opposing ideas are bad (evil, stupid, ignorant, etc.)
 - silencing ideas
 - considerate of feelings
 - loyalty to a group
