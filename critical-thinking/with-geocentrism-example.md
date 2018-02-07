@@ -94,6 +94,7 @@ The important thing is to know difference between ideas you have claimed for you
 - the goal is to not be fooled, and the easiest person to fool is yourself
 - Maintain certainty proportional to evidence
 
-
+## Links
 - [The Science of Thinking](https://www.youtube.com/watch?v=UBVV8pch1dM)
 - [A hard-to-read font reduces the framing effect in a large sample](https://link.springer.com/article/10.3758/s13423-017-1395-4)
+    
