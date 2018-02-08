@@ -1,6 +1,8 @@
 # Configuring Etherpad Lite
 
 - create digital ocean [droplet](https://www.digitalocean.com/)
+- installation
+
 
     ssh -o StrictHostKeyChecking=no root@HOSTNAME`
     apt-get update
@@ -9,7 +11,9 @@
     apt-get -y install gzip git curl python libssl-dev pkg-config build-essential nginx nodejs
     vim /etc/nginx/nginx.conf
 
-- delete entire contents of `http {}` section and replace it with this
+- configuration
+    - delete entire contents of `http {}` section and replace it with this
+
 
     server {
         listen       80;
@@ -17,6 +21,9 @@
             proxy_pass http://127.0.0.1:9001/;
         }
     }
+
+- launch
+
 
     nginx -s reload
     useradd -m -d /home/sean sean
@@ -26,4 +33,3 @@
     git clone git://github.com/ether/etherpad-lite.git
     cd etherpad-lite
     bin/run.sh
-
