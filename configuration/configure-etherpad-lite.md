@@ -11,7 +11,7 @@
 
 ## Commands
 
-    ssh -o StrictHostKeyChecking=no root@HOSTNAME`
+    ssh -o StrictHostKeyChecking=no root@HOSTNAME
     apt-get update
     apt-get -y upgrade
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
