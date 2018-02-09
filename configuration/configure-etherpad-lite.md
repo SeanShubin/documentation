@@ -2,9 +2,9 @@
 
 
 ## Summary
-- create digital ocean [droplet](https://www.digitalocean.com/)
+- create digital ocean [droplet](https://www.digitalocean.com/), these instructions used Ubuntu 16.04.3 x64
 - install dependencies
-- configure nginx 
+- in the nginx.conf file, delete the entirety of the http {} section and replace it with the content detailed later in this document 
 - create user
 - clone etherpad-lite
 - launch etherpad-lite
