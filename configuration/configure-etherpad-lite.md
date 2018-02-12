@@ -30,8 +30,13 @@
 
     server {
         listen       80;
-        location /pad/ {
-            rewrite ^/pad/?(.*)$ /$1 break;
-            proxy_pass http://127.0.0.1:9001/;
+        location /pad {        
+            rewrite                /pad/(.*) /$1 break;
+            rewrite                ^/pad$ /pad/ permanent; 
+            proxy_pass             http://localhost:9001/;
+            proxy_pass_header Server;
+            proxy_redirect         / /pad/;
+            proxy_set_header       Host $host;
+            proxy_buffering off;
         }
     }
