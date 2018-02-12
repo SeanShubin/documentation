@@ -47,6 +47,12 @@ It is not knowledge unless your belief is justified.
 - Albert Einstein (March 14, 1879 - April 18, 1955)
     - Observations of stellar aberration influenced his theory of special relativity
 
+What was necessary to figure this out?
+- people biased towards their own ideas
+- biases that are sufficiently varied
+- willingness to communicate to understand each-others ideas
+- doing the work to determine the fact of the matter
+
 If you don't do the work, what you have is not knowledge, what you have instead is someone else's idea.
 Critical thinking is about having your own ideas.
 
