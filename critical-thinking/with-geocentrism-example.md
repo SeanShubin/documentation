@@ -72,7 +72,7 @@ The important thing is to know difference between ideas you have claimed for you
 ## What critical thinking is not
 
 - saying the people with opposing ideas are bad (evil, stupid, ignorant, etc.)
-- silencing ideas
+- silencing ideas (the silenced idea is unlikely to be what you think it is)
 - considerate of feelings
 - loyalty to a group
 - being intelligent
@@ -87,7 +87,6 @@ The important thing is to know difference between ideas you have claimed for you
     - confirmation bias
     - backfire effect
     - language ambiguity
-- the easiest person to fool is yourself
 - very difficult to think critically alone, note the heliocentric model was shown to be true because of opposing biases
 - seek out alternative, even opposing ideas
 - to make progress, you need the courage to explore ideas that could turn out to be wrong
@@ -103,4 +102,3 @@ The important thing is to know difference between ideas you have claimed for you
 ## Links
 - [The Science of Thinking](https://www.youtube.com/watch?v=UBVV8pch1dM)
 - [A hard-to-read font reduces the framing effect in a large sample](https://link.springer.com/article/10.3758/s13423-017-1395-4)
-    
