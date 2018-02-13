@@ -64,6 +64,7 @@ The important thing is to know difference between ideas you have claimed for you
 - Disciplined Curiosity
 - don't accept ignorance, push for discovery
 - don't accept ideas easily, do the work to verify them
+- judgmental, ideas are ranked against each other
 - methodological naturalism
     - great at discovering the rules of objective reality
     - vulnerable to intentional deception
@@ -71,15 +72,15 @@ The important thing is to know difference between ideas you have claimed for you
 
 ## What critical thinking is not
 
+- documentation
+- dictionary
+- wikipedia
+- internet search
+- being intelligent
 - saying the people with opposing ideas are bad (evil, stupid, ignorant, etc.)
 - silencing ideas (the silenced idea is unlikely to be what you think it is)
 - considerate of feelings
 - loyalty to a group
-- being intelligent
-- wikipedia
-- dictionary
-- internet search
-- documentation
 - [echo chambers](echo-chambers.jpg)
 - [dunning kruger effect](dunning-kruger-effect.jpg)
 
