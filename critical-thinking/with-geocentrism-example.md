@@ -79,6 +79,7 @@ The important thing is to know difference between ideas you have claimed for you
 - wikipedia
 - dictionary
 - internet search
+- documentation
 - [echo chambers](echo-chambers.jpg)
 - [dunning kruger effect](dunning-kruger-effect.jpg)
 
