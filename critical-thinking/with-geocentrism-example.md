@@ -94,7 +94,7 @@ The important thing is to know difference between ideas you have claimed for you
 - to make progress, you need the courage to explore ideas that could turn out to be wrong
 
 ## Conclusion
-- Your mind has amazingly wonderful capabilities along with terrifying vulnerabilities
+- Your mind is both capable and vulnerable
 - Critical thinking is hard work, don't trust easily obtained certainty
 - Listen to the ideas of others, but don't believe them until you have evaluated them on your own
 - If you don't understand alternatives to your ideas and the reasons to choose your idea instead, then you don't understand your idea. 
