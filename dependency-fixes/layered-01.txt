@@ -1,0 +1,9 @@
+digraph detangled {
+  "controller";
+  "service";
+  "database";
+  "controller" -> "service";
+  "service" -> "database";
+  "service" -> "controller";
+  "database" -> "service";
+}

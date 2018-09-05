@@ -1,0 +1,8 @@
+digraph detangled {
+  "database";
+  "service";
+  "rules";
+  "service" -> "database";
+  "database" -> "rules";
+  "service" -> "rules"
+}

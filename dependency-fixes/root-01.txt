@@ -1,0 +1,10 @@
+digraph detangled {
+  "-root-";
+  "service";
+  "database";
+  "service" -> "database";
+  "-root-" -> "service";
+  "-root-" -> "database";
+  "service" -> "-root-";
+  "database" -> "-root-";
+}

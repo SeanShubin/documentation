@@ -1,0 +1,11 @@
+digraph detangled {
+  "controller";
+  "constants";
+  "service";
+  "database";
+  "service" -> "database";
+  "controller" -> "service";
+  "controller" -> "database";
+  "service" -> "constants";
+  "database" -> "constants";
+}
