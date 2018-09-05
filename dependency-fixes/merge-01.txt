@@ -1,0 +1,10 @@
+digraph detangled {
+  "utility";
+  "service";
+  "database";
+  "service" -> "database";
+  "utility" -> "service";
+  "utility" -> "database";
+  "service" -> "utility";
+  "database" -> "utility";
+}
