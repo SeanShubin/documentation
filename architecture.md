@@ -8,15 +8,14 @@ category 1
 category 2
 - mutable
 - complex (possibly derived)
-- restorable
-## Asyncronous
-handleEvent
-- input
-    - old state
-    - event
-- output
-    - new state
-    - sequence of effects
+- restorable (safe to delete, automatically recomputed)
+## Code
+empirically drive design to isolate non determinism
+- single entry point
+- test driven design
+- top down design
+- dependency inversion principle
+- libraries over frameworks
 ## Testing
 - logic tests
 - boundary tests
@@ -25,10 +24,11 @@ handleEvent
     - single smoke test runs every health check
 - manual test
     - single manual test of code that never has reason to change
-## code architecture
-empirically drive design to isolate non determinism
-- single entry point
-- test driven design
-- top down design
-- dependency inversion principle
-- libraries over frameworks
+## Asyncronous
+event loop
+- input
+    - old state
+    - event
+- output
+    - new state
+    - sequence of effects (side effects, new events)
