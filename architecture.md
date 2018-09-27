@@ -20,7 +20,7 @@ empirically drive design to isolate non determinism
 - logic tests
 - boundary tests
 - configuration tests
-    - health checks
+    - health checks (no domain knowledge)
     - single smoke test runs every health check
 - manual test
     - single manual test of code that never has reason to change
