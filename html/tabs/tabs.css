@@ -1,0 +1,28 @@
+ul {
+    padding: 0;
+}
+
+.tab {
+    border-left-color: lightgray;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: lightgray;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    display: inline;
+}
+
+.tab.active {
+    background-color: dodgerblue;
+    border-left-color: blue;
+    border-right-color: blue;
+    border-top-color: blue;
+}
