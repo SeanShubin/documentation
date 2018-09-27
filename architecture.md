@@ -24,6 +24,7 @@ empirically drive design to isolate non determinism
     - single smoke test runs every health check
 - manual test
     - single manual test of code that never has reason to change
+- no end to end tests
 ## Asyncronous
 event loop
 - input
