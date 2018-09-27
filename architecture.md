@@ -25,7 +25,7 @@ empirically drive design to isolate non determinism
 - manual test
     - single manual test of code that never has reason to change
 - no end to end tests
-## Asyncronous
+## Asynchronous
 event loop
 - input
     - old state
