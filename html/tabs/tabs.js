@@ -94,13 +94,8 @@ function myForEach(list, f) {
 }
 
 function tabClick(source) {
-    var allTabs = document.getElementsByClassName('level-1');
-    myForEach(allTabs, removeClass('active'));
-    source.classList.add('active');
-    var allChildTabs = document.getElementsByClassName('child-tab');
-    myForEach(allChildTabs, setDisplay('none'));
-    var children = document.getElementById('children-of-' + source.id);
-    children.style.display = 'block';
+    state.activeTab = parseInt(source.getAttribute('index'), 10);
+    render();
 }
 
 function subTabClick(source) {
@@ -131,12 +126,13 @@ function renderSubTab(attachTo) {
 
 function renderSubTabs(tabState, index) {
     var subTabs = document.getElementById('sub-tabs');
+    removeAllChildren('sub-tabs');
     tabState.tabs.forEach(renderSubTab(subTabs));
 }
 
-function renderTab(tabState, index) {
-    var tabs = document.getElementById('tabs');
+function createTab(tabState, index) {
     var li = document.createElement('li');
+    li.setAttribute('index', index);
     li.setAttribute('id', 'tab-' + index);
     li.setAttribute('onclick', 'tabClick(this)');
     li.classList.add('tab');
@@ -146,6 +142,12 @@ function renderTab(tabState, index) {
         renderSubTabs(tabState, index);
     }
     li.textContent = tabState.name;
+    return li;
+}
+
+function renderTab(tabState, index) {
+    var tabs = document.getElementById('tabs');
+    var li = createTab(tabState, index);
     tabs.appendChild(li);
 }
 
@@ -153,7 +155,19 @@ function forEachTab(f) {
     state.tabs.forEach(f);
 }
 
+function removeElement(element) {
+    element.parentElement.removeChild(element);
+}
+
+function removeAllChildren(id) {
+    var parent = document.getElementById(id);
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 function renderTabs() {
+    removeAllChildren('tabs');
     forEachTab(renderTab);
 }
 
