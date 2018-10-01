@@ -1,178 +1,206 @@
-var debugLines = [];
-var debugLinesSize = 6;
-var debugLineIndex = 0;
+function createModel() {
+    var state = {
+        tabs: [
+            {
+                name: 'Color',
+                active: true,
+                tabs:
+                    [
+                        {
+                            name: 'Red',
+                            active: true,
+                            description: 'Red Content'
+                        },
+                        {
+                            name: 'Green',
+                            active: false,
+                            description: 'Green Content'
+                        },
+                        {
+                            name: 'Blue',
+                            active: false,
+                            description: 'Blue Content'
+                        }
+                    ]
+            },
+            {
+                name: 'Shape',
+                active: false,
+                tabs:
+                    [
+                        {
+                            name: 'Oval',
+                            active: true,
+                            description: 'Oval Content'
+                        },
+                        {
+                            name: 'Diamond',
+                            active: false,
+                            description: 'Diamond Content'
+                        },
+                        {
+                            name: 'Squiggle',
+                            active: false,
+                            description: 'Squiggle Content'
+                        }
+                    ]
+            },
+            {
+                name: 'Shading',
+                active: false,
+                tabs:
+                    [
+                        {
+                            name: 'Solid',
+                            active: true,
+                            description: 'Solid Content'
+                        },
+                        {
+                            name: 'Shaded',
+                            active: false,
+                            description: 'Shaded Content'
+                        },
+                        {
+                            name: 'Outlined',
+                            active: false,
+                            description: 'Outlined Content'
+                        }
+                    ]
+            }
+        ]
+    };
 
-var state = {
-    activeTab: 1,
-    activeSubTab: 1,
-    tabs: [
-        {
-            name: 'Cat',
-            tabs:
-                [
-                    {
-                        name: 'Tiger',
-                        description: 'The tiger (Panthera tigris) is the largest cat species, most recognizable for its pattern of dark vertical stripes on reddish-orange fur with a lighter underside.'
-                    },
-                    {
-                        name: 'Ocelot',
-                        description: 'The ocelot (Leopardus pardalis) /ˈɒsəlɒt/ is a wild cat native to the southwestern United States, Mexico, Central and South America.'
-                    },
-                    {
-                        name: 'Jaguar',
-                        description: 'The jaguar (Panthera onca) is a wild cat species and the only extant member of the genus Panthera native to the Americas.'
-                    }
-                ]
-        },
-        {
-            name: 'Dog',
-            tabs:
-                [
-                    {
-                        name: 'Wolf',
-                        description: 'The wolf (Canis lupus), also known as the gray wolf, timber wolf, western wolf, and its other subspecies is a canine native to the wilderness and remote areas of Eurasia and North America.'
-                    },
-                    {
-                        name: 'Fox',
-                        description: 'Foxes are small-to-medium-sized, omnivorous mammals belonging to several genera of the family Canidae.'
-                    },
-                    {
-                        name: 'Jackal',
-                        description: 'Jackals are medium-sized omnivorous mammals of the genus Canis, which also includes wolves, coyotes and the domestic dog.'
-                    }
-                ]
+    function primaryTabs() {
+        return state.tabs;
+    }
+
+    function isActiveTab(tab) {
+        return tab.active;
+    }
+
+    function secondaryTabs() {
+        return state.tabs.find(isActiveTab).tabs;
+    }
+
+    function setActivePrimaryTab(activeIndex) {
+        function f(tab, currentIndex) {
+            tab.active = currentIndex === activeIndex;
         }
-    ]
-};
 
-function addDebugLine(line) {
-    debugLines.push('' + debugLineIndex++ + ' - ' + line);
-    if (debugLines.length > debugLinesSize) {
-        debugLines = debugLines.slice(1)
-    }
-}
-
-function debug(text) {
-    addDebugLine(text);
-    var debugElement = document.getElementById('debug');
-    debugElement.innerText = "";
-    debugLines.forEach(function (line) {
-        var node = document.createElement('p');
-        node.innerText = line;
-        debugElement.appendChild(node);
-    });
-}
-
-function removeClassFromElement(targetClass, element) {
-    element.classList.remove(targetClass);
-}
-
-function removeClass(targetClass) {
-    function partialApplication(element) {
-        removeClassFromElement(targetClass, element);
+        primaryTabs().map(f);
     }
 
-    return partialApplication;
-}
+    function setActiveSecondaryTab(activePrimaryIndex, activeSecondaryIndex) {
+        function f(tab, currentIndex) {
+            tab.active = currentIndex === activeSecondaryIndex;
+        }
 
-function setDisplayForElement(display, element) {
-    element.style.display = display;
-}
-
-function setDisplay(display) {
-    function partialAppliaction(element) {
-        setDisplayForElement(display, element);
+        state.tabs[activePrimaryIndex].tabs.map(f);
     }
 
-    return partialAppliaction;
-}
-
-function myForEach(list, f) {
-    for (var i = 0; i < list.length; i++) {
-        f(list[i]);
+    function primaryTabIndex() {
+        return state.tabs.findIndex(isActiveTab);
     }
+
+    var model = {
+        primaryTabs: primaryTabs,
+        secondaryTabs: secondaryTabs,
+        setActivePrimaryTab: setActivePrimaryTab,
+        setActiveSecondaryTab: setActiveSecondaryTab,
+        primaryTabIndex: primaryTabIndex
+    };
+    return model;
 }
 
-function tabClick(source) {
-    state.activeTab = parseInt(source.getAttribute('index'), 10);
-    render();
+var model = createModel();
+var root = document.body;
+
+function createElement(name) {
+    return document.createElement(name);
 }
 
-function subTabClick(source) {
-    var allTabs = document.getElementsByClassName('level-2');
-    myForEach(allTabs, removeClass('active'));
-    source.classList.add('active');
-}
-
-function createSubTab(subTabState, index) {
-    var li = document.createElement('li');
-    li.setAttribute('onclick', 'subTabClick(this)');
-    li.classList.add('tab');
-    li.classList.add('level-2');
-    if (state.activeSubTab === index) {
-        li.classList.add('active');
-    }
-    li.textContent = subTabState.name;
+function createLi(text) {
+    var li = createElement('li');
+    li.textContent = text;
     return li;
 }
 
-function renderSubTab(attachTo) {
-    function partialApplication(subTabState, index) {
-        attachTo.appendChild(createSubTab(subTabState, index));
-    }
-
-    return partialApplication;
-}
-
-function renderSubTabs(tabState, index) {
-    var subTabs = document.getElementById('sub-tabs');
-    removeAllChildren('sub-tabs');
-    tabState.tabs.forEach(renderSubTab(subTabs));
-}
-
-function createTab(tabState, index) {
-    var li = document.createElement('li');
-    li.setAttribute('index', index);
-    li.setAttribute('id', 'tab-' + index);
-    li.setAttribute('onclick', 'tabClick(this)');
-    li.classList.add('tab');
-    li.classList.add('level-1');
-    if (state.activeTab === index) {
-        li.classList.add('active');
-        renderSubTabs(tabState, index);
-    }
-    li.textContent = tabState.name;
-    return li;
-}
-
-function renderTab(tabState, index) {
-    var tabs = document.getElementById('tabs');
-    var li = createTab(tabState, index);
-    tabs.appendChild(li);
-}
-
-function forEachTab(f) {
-    state.tabs.forEach(f);
-}
-
-function removeElement(element) {
-    element.parentElement.removeChild(element);
-}
-
-function removeAllChildren(id) {
-    var parent = document.getElementById(id);
+function removeAllChildren(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
 }
 
-function renderTabs() {
-    removeAllChildren('tabs');
-    forEachTab(renderTab);
+function reRender() {
+    removeAllChildren(root);
+    render();
+}
+
+function primaryTabClick(tabView) {
+    var primaryTabIndex = Number(tabView.getAttribute('data-index-1'));
+    model.setActivePrimaryTab(primaryTabIndex);
+    reRender();
+}
+
+function secondaryTabClick(tabView) {
+    var primaryTabIndex = Number(tabView.getAttribute('data-index-1'));
+    var secondaryTabIndex = Number(tabView.getAttribute('data-index-2'));
+    model.setActiveSecondaryTab(primaryTabIndex, secondaryTabIndex);
+    reRender();
+}
+
+function renderPrimaryTab(tabModel, tabIndex) {
+    var tabView = createLi(tabModel.name);
+    tabView.classList.add('tab');
+    if (tabModel.active) {
+        tabView.classList.add('active');
+    }
+    tabView.setAttribute('data-index-1', tabIndex);
+    tabView.setAttribute('onclick', 'primaryTabClick(this)');
+    return tabView;
+}
+
+function renderSecondaryTab(tabModel, secondaryTabIndex) {
+    var tabView = createLi(tabModel.name);
+    tabView.classList.add('tab');
+    if (tabModel.active) {
+        tabView.classList.add('active');
+    }
+    tabView.setAttribute('data-index-1', model.primaryTabIndex());
+    tabView.setAttribute('data-index-2', secondaryTabIndex);
+    tabView.setAttribute('onclick', 'secondaryTabClick(this)');
+    return tabView;
+}
+
+function createUl() {
+    return createElement('ul');
+}
+
+function appendChildren(node, children) {
+    function appendChild(child) {
+        node.appendChild(child);
+    }
+
+    children.forEach(appendChild);
+}
+
+function renderPrimaryTabs(tabs) {
+    var ul = createUl();
+    var tabArray = tabs.map(renderPrimaryTab);
+    appendChildren(ul, tabArray);
+    return ul;
+}
+
+function renderSecondaryTabs(tabs) {
+    var ul = createUl();
+    var tabArray = tabs.map(renderSecondaryTab);
+    appendChildren(ul, tabArray);
+    return ul;
 }
 
 function render() {
-    renderTabs();
+    root.append(renderPrimaryTabs(model.primaryTabs()));
+    root.append(renderSecondaryTabs(model.secondaryTabs()));
 }
 
 render();
