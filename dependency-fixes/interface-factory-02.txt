@@ -1,0 +1,7 @@
+digraph detangled {
+  "interface";
+  "implementation";
+  "factory";
+  "implementation" -> "interface";
+  "factory" -> "implementation";
+}
