@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Composed</title>
+</head>
+<body>
+<div id="subject"></div>
+<div id="content"></div>
+
+<script>
+    function loadUrl(url, handleResponseText) {
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function (e) {
+            if (xhr.readyState === 4) {
+                handleResponseText(xhr.responseText);
+            }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.setRequestHeader('Content-type', 'text/html');
+        xhr.send();
+    }
+
+    function setElementTextFromUrl(elementId, url) {
+        var element = document.getElementById(elementId);
+
+        function setText(text) {
+            element.innerHTML = text;
+        }
+
+        loadUrl(url, setText);
+    }
+
+    setElementTextFromUrl('subject', 'fragment-subject.html');
+    setElementTextFromUrl('content', 'fragment-content.html');
+</script>
+</body>
+</html>
