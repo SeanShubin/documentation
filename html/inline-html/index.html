@@ -9,32 +9,18 @@
 <div id="content"></div>
 
 <script>
-    function loadUrl(url, handleResponseText) {
-        var xhr = new XMLHttpRequest();
+    const loadTextFromUrl = async (url) => {
+        const result = await fetch(url);
+        const text = result.text();
+        return text;
+    };
 
-        xhr.onreadystatechange = function (e) {
-            if (xhr.readyState === 4) {
-                handleResponseText(xhr.responseText);
-            }
-        };
+    const loadBodyFromFragments = async () => {
+        document.getElementById('subject').innerHTML = await loadTextFromUrl('fragment-subject.html');
+        document.getElementById('content').innerHTML = await loadTextFromUrl('fragment-content.html');
+    };
 
-        xhr.open("GET", url, true);
-        xhr.setRequestHeader('Content-type', 'text/html');
-        xhr.send();
-    }
-
-    function setElementTextFromUrl(elementId, url) {
-        var element = document.getElementById(elementId);
-
-        function setText(text) {
-            element.innerHTML = text;
-        }
-
-        loadUrl(url, setText);
-    }
-
-    setElementTextFromUrl('subject', 'fragment-subject.html');
-    setElementTextFromUrl('content', 'fragment-content.html');
+    const promise = loadBodyFromFragments();
 </script>
 </body>
 </html>
