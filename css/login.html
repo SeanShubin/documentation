@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid</title>
+    <style>
+        .login-form {
+            display: grid;
+            grid-template-columns: auto minmax(auto, 1fr);
+            grid-template-areas: "email-label email-input" "pw-label    pw-input   " "login       login      ";
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+
+        .cell.email.label {
+            grid-area: email-label;
+        }
+
+        .cell.email.input {
+            grid-area: email-input;
+        }
+
+        .cell.password.label {
+            grid-area: pw-label;
+        }
+
+        .cell.password.input {
+            grid-area: pw-input;
+        }
+
+        .cell.login.action {
+            grid-area: login;
+            justify-self: right;
+        }
+    </style>
+</head>
+<body>
+<div class="login-form">
+    <div class="cell email label">Email</div>
+    <input class="cell email input" type="text" placeholder="your-email@host.com" required>
+    <div class="cell password label">Password</div>
+    <input class="cell password input" type="password" placeholder="password" required>
+    <button class="cell login action" type="submit">Login</button>
+</div>
+</body>
+</html>
