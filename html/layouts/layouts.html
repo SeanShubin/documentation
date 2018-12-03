@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layouts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            padding: 5px;
+            font: 15px arial, sans-serif;
+        }
+
+        .float > div {
+            border: 1px solid black;
+            float: left;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flexbox > div {
+            border: 1px solid black;
+        }
+
+        .cssgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        }
+
+        .cssgrid > div {
+            border: 1px solid black;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<h1>layout</h1>
+<h2>float</h2>
+<div class="float">
+    <div>float 1</div>
+    <div>float 2</div>
+    <div>float 3</div>
+    <div>float 4</div>
+    <div>float 5</div>
+    <div>float 6</div>
+    <div>float 7</div>
+    <div>float 8</div>
+    <div>float 9</div>
+    <div>float 10</div>
+    <div>float float float float float float float float float float float float float float float float float float
+        float float
+    </div>
+    <div>float 11</div>
+    <div>float 12</div>
+    <div>float 13</div>
+    <div>float 14</div>
+    <div>float 15</div>
+    <div>float 16</div>
+    <div>float 17</div>
+    <div>float 18</div>
+    <div>float 19</div>
+    <div>float 20</div>
+</div>
+<div class="clearfix"></div>
+<h2>flexbox</h2>
+<div class="flexbox">
+    <div>flexbox 1</div>
+    <div>flexbox 2</div>
+    <div>flexbox 3</div>
+    <div>flexbox 4</div>
+    <div>flexbox 5</div>
+    <div>flexbox 6</div>
+    <div>flexbox 7</div>
+    <div>flexbox 8</div>
+    <div>flexbox 9</div>
+    <div>flexbox 10</div>
+    <div>flexbox flexbox flexbox flexbox flexbox flexbox flexbox flexbox flexbox flexbox</div>
+    <div>flexbox 11</div>
+    <div>flexbox 12</div>
+    <div>flexbox 13</div>
+    <div>flexbox 14</div>
+    <div>flexbox 15</div>
+    <div>flexbox 16</div>
+    <div>flexbox 17</div>
+    <div>flexbox 18</div>
+    <div>flexbox 19</div>
+    <div>flexbox 20</div>
+</div>
+<h2>cssgrid</h2>
+<div class="cssgrid">
+    <div>cssgrid 1</div>
+    <div>cssgrid 2</div>
+    <div>cssgrid 3</div>
+    <div>cssgrid 4</div>
+    <div>cssgrid 5</div>
+    <div>cssgrid 6</div>
+    <div>cssgrid 7</div>
+    <div>cssgrid 8</div>
+    <div>cssgrid 9</div>
+    <div>cssgrid 10</div>
+    <div>cssgrid cssgrid cssgrid cssgrid cssgrid cssgrid cssgrid cssgrid cssgrid cssgrid</div>
+    <div>cssgrid 11</div>
+    <div>cssgrid 12</div>
+    <div>cssgrid 13</div>
+    <div>cssgrid 14</div>
+    <div>cssgrid 15</div>
+    <div>cssgrid 16</div>
+    <div>cssgrid 17</div>
+    <div>cssgrid 18</div>
+    <div>cssgrid 19</div>
+    <div>cssgrid 20</div>
+</div>
+</body>
+</html>
