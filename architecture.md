@@ -17,6 +17,7 @@ category 2
 - mutable
 - complex (possibly derived)
 - restorable (safe to delete, automatically recomputed)
+
 ## Code
 empirically drive design to isolate non determinism
 - single entry point
@@ -24,6 +25,7 @@ empirically drive design to isolate non determinism
 - top down design
 - dependency inversion principle
 - libraries over frameworks
+
 ## Testing
 - logic tests
 - boundary tests
@@ -33,6 +35,7 @@ empirically drive design to isolate non determinism
 - manual test
     - single manual test of code that never has reason to change
 - no end to end tests
+
 ## Asynchronous
 event loop
 - input
